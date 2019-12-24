@@ -1,0 +1,283 @@
+﻿<html>
+<head>
+  <title>Bundle-example-task-list-questionnaire-xml-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="xml">
+
+&lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle">Bundle</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;example-task-list-questionnaire&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.meta">meta</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.versionId">versionId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;1&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a> <a href="http://hl7.org/fhir/R4/datatypes.html#instant">value</a>=&quot;2019-12-11T13:17:28.000-05:00&quot;/&gt;
+  &lt;/meta&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;collection&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://example.org/fhir/StructureDefinition/Questionnaire/04ba3565-2a9b-46ff-ab19-b67e918890d4&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire">Questionnaire</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;04ba3565-2a9b-46ff-ab19-b67e918890d4&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 04ba3565-2a9b-46ff-ab19-b67e918890d4&lt;/p&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;a href=&quot;http://example.org/fhir/StructureDefinition/Questionnaire/04ba3565-2a9b-46ff-ab19-b67e918890d4&quot;&gt;http://example.org/fhir/StructureDefinition/Questionnaire/04ba3565-2a9b-46ff-ab19-b67e918890d4&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 222580b3-1701-44b2-885c-6352ca5a6adf&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Food Insecurity (Hunger Vital Sign)&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Food Insecurity&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;subjectType&lt;/b&gt;: Patient&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: Dec 3, 2019 11:09:54 AM&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: /88121-9&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Hunger Vital Sign [HVS] (Details: LOINC code 88121-9 = 'Hunger Vital Sign [HVS]', stated as 'Hunger Vital Sign [HVS]')&lt;/p&gt;&lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Hunger Vital Sign [HVS]&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: group&lt;/p&gt;&lt;p&gt;&lt;b&gt;required&lt;/b&gt;: false&lt;/p&gt;&lt;h3&gt;Items&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/us/sdc/StructureDefinition/sdc-questionnaire-endpoint&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;https://requester.organization.com/fhir/baseR4&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.url">url</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://example.org/fhir/StructureDefinition/Questionnaire/04ba3565-2a9b-46ff-ab19-b67e918890d4&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://www.maxmddirect.com/hl7/fhir/grv-locali-screenings&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;222580b3-1701-44b2-885c-6352ca5a6adf&quot;/&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Food Insecurity (Hunger Vital Sign)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Food Insecurity&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.subjectType">subjectType</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Patient&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2019-12-03T16:09:54.445Z&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item">item</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;/88121-9&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.code">code</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;88121-9&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Hunger Vital Sign [HVS]&quot;/&gt;
+          &lt;/code&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Hunger Vital Sign [HVS]&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;group&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.extension">extension</a>
+                       <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl&quot;&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                  &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/questionnaire-item-control&quot;/&gt;
+                  &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;drop-down&quot;/&gt;
+                  &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Drop down&quot;/&gt;
+                &lt;/coding&gt;
+                &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Drop down&quot;/&gt;
+              &lt;/valueCodeableConcept&gt;
+            &lt;/extension&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;/88121-9/88122-7&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.code">code</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;88122-7&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>
+                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Within the past 12Mo we worried whether our food would run out before we got money to buy more&quot;/&gt;
+            &lt;/code&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Within the past 12Mo we worried whether our food would run out before we got money to buy more&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;choice&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;LA28397-0&quot;/&gt;
+                &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Often true&quot;/&gt;
+              &lt;/valueCoding&gt;
+            &lt;/answerOption&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;LA6729-3&quot;/&gt;
+                &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Sometimes true&quot;/&gt;
+              &lt;/valueCoding&gt;
+            &lt;/answerOption&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;LA28398-8&quot;/&gt;
+                &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Never true&quot;/&gt;
+              &lt;/valueCoding&gt;
+            &lt;/answerOption&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;LA15775-2&quot;/&gt;
+                &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Don&amp;#39;t know/refused&quot;/&gt;
+              &lt;/valueCoding&gt;
+            &lt;/answerOption&gt;
+          &lt;/item&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.extension">extension</a>
+                       <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl&quot;&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                  &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/questionnaire-item-control&quot;/&gt;
+                  &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;drop-down&quot;/&gt;
+                  &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Drop down&quot;/&gt;
+                &lt;/coding&gt;
+                &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Drop down&quot;/&gt;
+              &lt;/valueCodeableConcept&gt;
+            &lt;/extension&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;/88121-9/88123-5&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.code">code</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;88123-5&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>
+                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Within the past 12Mo the food we bought just didn&amp;#39;t last and we didn&amp;#39;t have money to get more&quot;/&gt;
+            &lt;/code&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Within the past 12Mo the food we bought just didn&amp;#39;t last and we didn&amp;#39;t have money to get more&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;choice&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;LA28397-0&quot;/&gt;
+                &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Often true&quot;/&gt;
+              &lt;/valueCoding&gt;
+            &lt;/answerOption&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;LA6729-3&quot;/&gt;
+                &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Sometimes true&quot;/&gt;
+              &lt;/valueCoding&gt;
+            &lt;/answerOption&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;LA28398-8&quot;/&gt;
+                &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Never true&quot;/&gt;
+              &lt;/valueCoding&gt;
+            &lt;/answerOption&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;LA15775-2&quot;/&gt;
+                &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Don&amp;#39;t know/refused&quot;/&gt;
+              &lt;/valueCoding&gt;
+            &lt;/answerOption&gt;
+          &lt;/item&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.extension">extension</a>
+                       <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl&quot;&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
+                &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+                  &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/questionnaire-item-control&quot;/&gt;
+                  &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;help&quot;/&gt;
+                  &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Help-Button&quot;/&gt;
+                &lt;/coding&gt;
+                &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Help-Button&quot;/&gt;
+              &lt;/valueCodeableConcept&gt;
+            &lt;/extension&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;/88121-9-help&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;The Hunger Vital Sign™ identifies individuals and families as being at risk for food insecurity. A positive screen is either question answered with &amp;quot;often true&amp;quot; or &amp;quot;sometimes true.&amp;quot;&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;display&quot;/&gt;
+          &lt;/item&gt;
+        &lt;/item&gt;
+      &lt;/Questionnaire&gt;
+    &lt;/resource&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;POST&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Questionnaire&quot;/&gt;
+    &lt;/request&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://example.org/fhir/StructureDefinition/SDOH-Patient-List&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/list.html#List">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/list.html#List">List</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/list.html#List.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;SDOH-Patient-List&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/list.html#List.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: SDOH-Patient-List&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: current&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Patient List&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;entry&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;: &lt;a href=&quot;Patient?given=Alice&amp;amp;family=Newman&amp;amp;address-postalcode=97006&amp;amp;birthdate=1970-05-01&quot;&gt;Patient?given=Alice&amp;amp;family=Newman&amp;amp;address-postalcode=97006&amp;amp;birthdate=1970-05-01&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;entry&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;: &lt;a href=&quot;Patient?given=Jeremy&amp;amp;family=Bates&amp;amp;address-postalcode=97006&amp;amp;birthdate=1980-08-01&quot;&gt;Patient?given=Jeremy&amp;amp;family=Bates&amp;amp;address-postalcode=97006&amp;amp;birthdate=1980-08-01&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/list.html#List.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;current&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/list.html#List.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient List&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/list.html#List.entry">entry</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/list.html#List.entry.item">item</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
+                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient?given=Alice&amp;amp;family=Newman&amp;amp;address-postalcode=97006&amp;amp;birthdate=1970-05-01&quot;/&gt;
+          &lt;/item&gt;
+        &lt;/entry&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/list.html#List.entry">entry</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/list.html#List.entry.item">item</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
+                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient?given=Jeremy&amp;amp;family=Bates&amp;amp;address-postalcode=97006&amp;amp;birthdate=1980-08-01&quot;/&gt;
+          &lt;/item&gt;
+        &lt;/entry&gt;
+      &lt;/List&gt;
+    &lt;/resource&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;POST&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;List&quot;/&gt;
+    &lt;/request&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://example.org/fhir/StructureDefinition/US-Core-Organization&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization">Organization</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;US-Core-Organization&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: US-Core-Organization&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 123&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Good Health Hospital&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: 123 Main St Frot Lee NJ 07024 &lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://grv.hl7t-tasks.tmp/grv-hl7t-org-identifier&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;123&quot;/&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.active">active</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Good Health Hospital&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.address">address</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.line">line</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;123 Main St&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.city">city</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Frot Lee&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.state">state</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;NJ&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.postalCode">postalCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;07024&quot;/&gt;
+        &lt;/address&gt;
+      &lt;/Organization&gt;
+    &lt;/resource&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;POST&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Organization&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.ifNoneExist">ifNoneExist</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Organization?identifier=http%3A%2F%2Fgrv.hl7t-tasks.tmp%2Fgrv-hl7t-org-identifier|123&quot;/&gt;
+    &lt;/request&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://example.org/fhir/StructureDefinition/SDOH-Screening-Task&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/task.html#Task">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/task.html#Task">Task</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/task.html#Task.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;SDOH-Screening-Task&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/task.html#Task.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: SDOH-Screening-Task&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: requested&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Screen Patients &lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt;(Details : {http://grv.hl7t-tasks.tmp/grv-hl7t-tasks code 'grv-hl7-tasks-20191209143500ET' = 'grv-hl7-tasks-20191209143500ET', given as 'screen-pts'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;focus&lt;/b&gt;: &lt;a href=&quot;Questionnaire-04ba3565-2a9b-46ff-ab19-b67e918890d4.html&quot;&gt;Generated Summary: id: 04ba3565-2a9b-46ff-ab19-b67e918890d4; url: http://example.org/fhir/StructureDefinition/Questionnaire/04ba3565-2a9b-46ff-ab19-b67e918890d4; 222580b3-1701-44b2-885c-6352ca5a6adf; version: 0.0.1; name: example-hunger-vital-sign-screening; title: example-hunger-vital-sign-screening; status: active; subjectType: Patient; date: Dec 3, 2019 11:09:54 AM&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;for&lt;/b&gt;: &lt;a href=&quot;List/0bddd887-b878-4795-9964-378b3ca0d7e1&quot;&gt;List/0bddd887-b878-4795-9964-378b3ca0d7e1&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;requester&lt;/b&gt;: &lt;a href=&quot;Organization/3c26f307-1aa1-4701-ac43-3267ca601470&quot;&gt;Organization/3c26f307-1aa1-4701-ac43-3267ca601470&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/task.html#Task.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://www.maxmddirect.com/fhir/extension/sdc/task/type&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                      <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://www.maxmddirect.com/fhir/code/sdc/task/type&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;questionnaire&quot;/&gt;
+            &lt;/coding&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Fullfill Questionnaire Task&quot;/&gt;
+          &lt;/valueCodeableConcept&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/task.html#Task.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;requested&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/task.html#Task.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://grv.hl7t-tasks.tmp/grv-hl7t-tasks&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;grv-hl7-tasks-20191209143500ET&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;screen-pts&quot;/&gt;
+          &lt;/coding&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Screen Patients&quot;/&gt;
+        &lt;/code&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/task.html#Task.focus">focus</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Questionnaire/04ba3565-2a9b-46ff-ab19-b67e918890d4&quot;/&gt;
+        &lt;/focus&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/task.html#Task.for">for</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;List/0bddd887-b878-4795-9964-378b3ca0d7e1&quot;/&gt;
+        &lt;/for&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/task.html#Task.requester">requester</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Organization/3c26f307-1aa1-4701-ac43-3267ca601470&quot;/&gt;
+        &lt;/requester&gt;
+      &lt;/Task&gt;
+    &lt;/resource&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;POST&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Task&quot;/&gt;
+    &lt;/request&gt;
+  &lt;/entry&gt;
+&lt;/Bundle&gt;</pre>
+</body>
+</html>

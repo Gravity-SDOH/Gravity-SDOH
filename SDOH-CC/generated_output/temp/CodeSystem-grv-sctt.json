@@ -1,0 +1,20 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "grv-sctt",
+  "meta": {
+    "versionId": "3",
+    "lastUpdated": "2019-12-09T15:36:11.000-05:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Placeholder_SNOMED_CT</h2><p>This code system http://grv.sctt.tmp/grv-sctt defines many codes, but they are not represented here</p></div>"
+  },
+  "url": "http://grv.sctt.tmp/grv-sctt",
+  "version": "0.0.1",
+  "name": "Placeholder SNOMED CT Code System",
+  "title": "Placeholder_SNOMED_CT",
+  "status": "draft",
+  "date": "2019-12-23T16:16:42-05:00",
+  "publisher": "Gravity Project",
+  "content": "not-present"
+}

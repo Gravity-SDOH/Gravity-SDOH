@@ -1,0 +1,305 @@
+{% raw %}<pre class="json">
+{
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle">resourceType</a>" : "Bundle",
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.id">id</a>" : "example-task-list-questionnaire",
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.versionId">versionId</a>" : "1",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a>" : "2019-12-11T13:17:28.000-05:00"
+  },
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">type</a>" : "collection",
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://example.org/fhir/StructureDefinition/Questionnaire/04ba3565-2a9b-46ff-ab19-b67e918890d4",
+      "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/questionnaire.html">resourceType</a>" : "Questionnaire",
+        "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.id">id</a>" : "04ba3565-2a9b-46ff-ab19-b67e918890d4",
+        "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 04ba3565-2a9b-46ff-ab19-b67e918890d4&lt;/p&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;a href=\&quot;http://example.org/fhir/StructureDefinition/Questionnaire/04ba3565-2a9b-46ff-ab19-b67e918890d4\&quot;&gt;http://example.org/fhir/StructureDefinition/Questionnaire/04ba3565-2a9b-46ff-ab19-b67e918890d4&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 222580b3-1701-44b2-885c-6352ca5a6adf&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Food Insecurity (Hunger Vital Sign)&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Food Insecurity&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;subjectType&lt;/b&gt;: Patient&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: Dec 3, 2019 11:09:54 AM&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: /88121-9&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Hunger Vital Sign [HVS] (Details: LOINC code 88121-9 = 'Hunger Vital Sign [HVS]', stated as 'Hunger Vital Sign [HVS]')&lt;/p&gt;&lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Hunger Vital Sign [HVS]&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: group&lt;/p&gt;&lt;p&gt;&lt;b&gt;required&lt;/b&gt;: false&lt;/p&gt;&lt;h3&gt;Items&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        },
+        "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/us/sdc/StructureDefinition/sdc-questionnaire-endpoint",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "https://requester.organization.com/fhir/baseR4"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.url">url</a>" : "http://example.org/fhir/StructureDefinition/Questionnaire/04ba3565-2a9b-46ff-ab19-b67e918890d4",
+        "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.identifier">identifier</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://www.maxmddirect.com/hl7/fhir/grv-locali-screenings",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "222580b3-1701-44b2-885c-6352ca5a6adf"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.name">name</a>" : "Food Insecurity (Hunger Vital Sign)",
+        "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.title">title</a>" : "Food Insecurity",
+        "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.status">status</a>" : "active",
+        "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.subjectType">subjectType</a>" : [
+          "Patient"
+        ],
+        "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.date">date</a>" : "2019-12-03T16:09:54.445Z",
+        "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item">item</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "/88121-9",
+            "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.code">code</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "88121-9",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Hunger Vital Sign [HVS]"
+              }
+            ],
+            "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "Hunger Vital Sign [HVS]",
+            "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "group",
+            "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+            "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.extension">extension</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                        {
+                          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/questionnaire-item-control",
+                          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "drop-down",
+                          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Drop down"
+                        }
+                      ],
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Drop down"
+                    }
+                  }
+                ],
+                "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "/88121-9/88122-7",
+                "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.code">code</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "88122-7",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Within the past 12Mo we worried whether our food would run out before we got money to buy more"
+                  }
+                ],
+                "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "Within the past 12Mo we worried whether our food would run out before we got money to buy more",
+                "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "choice",
+                "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+                "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "LA28397-0",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Often true"
+                    }
+                  },
+                  {
+                    "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "LA6729-3",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Sometimes true"
+                    }
+                  },
+                  {
+                    "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "LA28398-8",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Never true"
+                    }
+                  },
+                  {
+                    "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "LA15775-2",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Don't know/refused"
+                    }
+                  }
+                ]
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.extension">extension</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                        {
+                          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/questionnaire-item-control",
+                          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "drop-down",
+                          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Drop down"
+                        }
+                      ],
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Drop down"
+                    }
+                  }
+                ],
+                "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "/88121-9/88123-5",
+                "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.code">code</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "88123-5",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Within the past 12Mo the food we bought just didn't last and we didn't have money to get more"
+                  }
+                ],
+                "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "Within the past 12Mo the food we bought just didn't last and we didn't have money to get more",
+                "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "choice",
+                "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a>" : false,
+                "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "LA28397-0",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Often true"
+                    }
+                  },
+                  {
+                    "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "LA6729-3",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Sometimes true"
+                    }
+                  },
+                  {
+                    "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "LA28398-8",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Never true"
+                    }
+                  },
+                  {
+                    "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "LA15775-2",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Don't know/refused"
+                    }
+                  }
+                ]
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.extension">extension</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                        {
+                          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/questionnaire-item-control",
+                          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "help",
+                          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Help-Button"
+                        }
+                      ],
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Help-Button"
+                    }
+                  }
+                ],
+                "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "/88121-9-help",
+                "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a>" : "The Hunger Vital Sign™ identifies individuals and families as being at risk for food insecurity. A positive screen is either question answered with \&quot;often true\&quot; or \&quot;sometimes true.\&quot;",
+                "<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a>" : "display"
+              }
+            ]
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>" : {
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a>" : "POST",
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a>" : "Questionnaire"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://example.org/fhir/StructureDefinition/SDOH-Patient-List",
+      "<a href="http://hl7.org/fhir/R4/list.html#List">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/list.html">resourceType</a>" : "List",
+        "<a href="http://hl7.org/fhir/R4/list.html#List.id">id</a>" : "SDOH-Patient-List",
+        "<a href="http://hl7.org/fhir/R4/list.html#List.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: SDOH-Patient-List&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: current&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Patient List&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;entry&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;: &lt;a href=\&quot;Patient?given=Alice&amp;amp;family=Newman&amp;amp;address-postalcode=97006&amp;amp;birthdate=1970-05-01\&quot;&gt;Patient?given=Alice&amp;amp;family=Newman&amp;amp;address-postalcode=97006&amp;amp;birthdate=1970-05-01&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;entry&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;: &lt;a href=\&quot;Patient?given=Jeremy&amp;amp;family=Bates&amp;amp;address-postalcode=97006&amp;amp;birthdate=1980-08-01\&quot;&gt;Patient?given=Jeremy&amp;amp;family=Bates&amp;amp;address-postalcode=97006&amp;amp;birthdate=1980-08-01&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        },
+        "<a href="http://hl7.org/fhir/R4/list.html#List.status">status</a>" : "current",
+        "<a href="http://hl7.org/fhir/R4/list.html#List.title">title</a>" : "Patient List",
+        "<a href="http://hl7.org/fhir/R4/list.html#List.entry">entry</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/list.html#List.entry.item">item</a>" : {
+              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient?given=Alice&amp;family=Newman&amp;address-postalcode=97006&amp;birthdate=1970-05-01"
+            }
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/list.html#List.entry.item">item</a>" : {
+              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient?given=Jeremy&amp;family=Bates&amp;address-postalcode=97006&amp;birthdate=1980-08-01"
+            }
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>" : {
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a>" : "POST",
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a>" : "List"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://example.org/fhir/StructureDefinition/US-Core-Organization",
+      "<a href="http://hl7.org/fhir/R4/organization.html#Organization">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/organization.html">resourceType</a>" : "Organization",
+        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.id">id</a>" : "US-Core-Organization",
+        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: US-Core-Organization&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 123&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Good Health Hospital&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: 123 Main St Frot Lee NJ 07024 &lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        },
+        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.identifier">identifier</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://grv.hl7t-tasks.tmp/grv-hl7t-org-identifier",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "123"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.active">active</a>" : true,
+        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.name">name</a>" : "Good Health Hospital",
+        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.address">address</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.line">line</a>" : [
+              "123 Main St"
+            ],
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.city">city</a>" : "Frot Lee",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.state">state</a>" : "NJ",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.postalCode">postalCode</a>" : "07024"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>" : {
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a>" : "POST",
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a>" : "Organization",
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.ifNoneExist">ifNoneExist</a>" : "Organization?identifier=http%3A%2F%2Fgrv.hl7t-tasks.tmp%2Fgrv-hl7t-org-identifier|123"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://example.org/fhir/StructureDefinition/SDOH-Screening-Task",
+      "<a href="http://hl7.org/fhir/R4/task.html#Task">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/task.html">resourceType</a>" : "Task",
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.id">id</a>" : "SDOH-Screening-Task",
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: SDOH-Screening-Task&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: requested&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Screen Patients &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://grv.hl7t-tasks.tmp/grv-hl7t-tasks code 'grv-hl7-tasks-20191209143500ET' = 'grv-hl7-tasks-20191209143500ET', given as 'screen-pts'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;focus&lt;/b&gt;: &lt;a href=\&quot;Questionnaire-04ba3565-2a9b-46ff-ab19-b67e918890d4.html\&quot;&gt;Generated Summary: id: 04ba3565-2a9b-46ff-ab19-b67e918890d4; url: http://example.org/fhir/StructureDefinition/Questionnaire/04ba3565-2a9b-46ff-ab19-b67e918890d4; 222580b3-1701-44b2-885c-6352ca5a6adf; version: 0.0.1; name: example-hunger-vital-sign-screening; title: example-hunger-vital-sign-screening; status: active; subjectType: Patient; date: Dec 3, 2019 11:09:54 AM&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;for&lt;/b&gt;: &lt;a href=\&quot;List/0bddd887-b878-4795-9964-378b3ca0d7e1\&quot;&gt;List/0bddd887-b878-4795-9964-378b3ca0d7e1&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;requester&lt;/b&gt;: &lt;a href=\&quot;Organization/3c26f307-1aa1-4701-ac43-3267ca601470\&quot;&gt;Organization/3c26f307-1aa1-4701-ac43-3267ca601470&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        },
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://www.maxmddirect.com/fhir/extension/sdc/task/type",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://www.maxmddirect.com/fhir/code/sdc/task/type",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "questionnaire"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Fullfill Questionnaire Task"
+            }
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.status">status</a>" : "requested",
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.code">code</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://grv.hl7t-tasks.tmp/grv-hl7t-tasks",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "grv-hl7-tasks-20191209143500ET",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "screen-pts"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Screen Patients"
+        },
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.focus">focus</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Questionnaire/04ba3565-2a9b-46ff-ab19-b67e918890d4"
+        },
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.for">for</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "List/0bddd887-b878-4795-9964-378b3ca0d7e1"
+        },
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.requester">requester</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Organization/3c26f307-1aa1-4701-ac43-3267ca601470"
+        }
+      },
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>" : {
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a>" : "POST",
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a>" : "Task"
+      }
+    }
+  ]
+}</pre>
+{% endraw %}

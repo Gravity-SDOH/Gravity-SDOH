@@ -1,0 +1,78 @@
+---
+# jekyll header
+level: 2
+template: base
+active: format
+layout: fhir-artifact
+type: Questionnaire
+id: 04ba3565-2a9b-46ff-ab19-b67e918890d4
+---
+
+<!-- ig template for many conformance resource html pages  ('base' in definitions file)  can not be used for conformance resources that have more that a single base template. e.g.,  sd since there are mapping and definitions templates for it as well  they need to be split out into 3 separate templates -->
+
+<!-- ============ CONTENT CONTENT=============== -->
+
+{% case 'Questionnaire' %} <!-- content depends on type -->
+{% when 'ValueSet' %}
+<!-- ============VAlUESET CONTENT CONTENT=============== -->
+
+  {% include Questionnaire-04ba3565-2a9b-46ff-ab19-b67e918890d4-summary.xhtml %}
+  {% include Questionnaire-04ba3565-2a9b-46ff-ab19-b67e918890d4-xref.xhtml %}
+  {% include Questionnaire-04ba3565-2a9b-46ff-ab19-b67e918890d4-cld.xhtml %}
+
+  <h3>Expansion</h3>
+
+  {% include Questionnaire-04ba3565-2a9b-46ff-ab19-b67e918890d4-expansion.xhtml %}
+<!-- ============VAlUESET CONTENT CONTENT=============== -->
+
+<!-- ( % when 'StructureMap' % }
+============StructureMap CONTENT CONTENT===============
+  ( % include nav-tabs.html type="Questionnaire" id="04ba3565-2a9b-46ff-ab19-b67e918890d4" active="content" % }
+
+  <p>
+  Thise is the mapping between FHIR resources and the Logical Model:
+  </p>
+
+  <a name="summary"> </a>
+  <h2>Summary</h2>
+  ( % include Questionnaire-04ba3565-2a9b-46ff-ab19-b67e918890d4-summary.xhtml % }
+  <br/>
+
+  <h2>Content</h2>
+  ( %  include Questionnaire-04ba3565-2a9b-46ff-ab19-b67e918890d4-content.xhtml % }
+  <br/>
+
+  <a name="script"> </a>
+  <h2>Script</h2>
+  <pre>
+  ( % include Questionnaire-04ba3565-2a9b-46ff-ab19-b67e918890d4-script.xhtml % }
+  </pre>
+============StructureMap CONTENT CONTENT=============== -->
+
+{% when 'OperationDefinition' %}
+<!-- ============OperationDefinition CONTENT CONTENT=============== -->
+
+  {% include Questionnaire-04ba3565-2a9b-46ff-ab19-b67e918890d4-html.xhtml %}
+
+  {% capture my-include %}{% include 04ba3565-2a9b-46ff-ab19-b67e918890d4.md %}{% endcapture %}{{ my-include | markdownify }}  <!--add inline examples here -->
+<!-- ============OperationDefinition CONTENT CONTENT=============== -->
+
+{% else %}
+<!-- ============CodeSystem ConceptMap CapabilityStatement CONTENT CONTENT=============== -->
+
+  <h2>Questionnaire: 04ba3565-2a9b-46ff-ab19-b67e918890d4</h2>
+
+  {% include Questionnaire-04ba3565-2a9b-46ff-ab19-b67e918890d4-html.xhtml %}
+  <!-- ============CodeSystem ConceptMap CapabilityStatement CONTENT CONTENT=============== -->
+
+{% endcase %}
+
+
+<!-- simple format links
+<p>
+Formats: <a href="Questionnaire-04ba3565-2a9b-46ff-ab19-b67e918890d4.html">Narrative</a>, <a href="Questionnaire-04ba3565-2a9b-46ff-ab19-b67e918890d4.xml.html">XML</a>, <a href="Questionnaire-04ba3565-2a9b-46ff-ab19-b67e918890d4.json.html">JSON</a>, <a href="Questionnaire-04ba3565-2a9b-46ff-ab19-b67e918890d4.ttl.html">Turtle</a>
+</p>
+-->
+
+
+  <!-- ==============END CONTENT END CONTENT=================== -->

@@ -1,0 +1,265 @@
+{
+	"tool": "jekyll",
+	"source": "implementationguide/SDOH-CC.xml",
+	"npm-name": "SDOH-Clinical-Care",
+	"license": "CC0-1.0",
+	"paths": {
+		"qa": "generated_output/qa",
+		"temp": "generated_output/temp",
+		"output": "output",
+		"txCache": "generated_output/txCache",
+		"specification": "http://hl7.org/fhir/R4/",
+		"pages": [
+			"framework",
+			"source/pages"
+		],
+		"resources": [
+			"source/resources"
+		]
+	},
+	"pages": [
+		"pages"
+	],
+	"version": "4.0.1",
+	"extension-domains": [
+		"https://trifolia-on-fhir.lantanagroup.com"
+	],
+	"allowed-domains": [
+		"https://trifolia-on-fhir.lantanagroup.com"
+	],
+	"sct-edition": "http://snomed.info/sct/731000124108",
+	"extraTemplates": [
+		"mappings"
+	],
+	"canonicalBase": "http://hl7.maxmd.org/fhir/us/maxmd",
+	"defaults": {
+		"Location": {
+			"template-base": "ex.html"
+		},
+		"ProcedureRequest": {
+			"template-base": "ex.html"
+		},
+		"Organization": {
+			"template-base": "ex.html"
+		},
+		"MedicationStatement": {
+			"template-base": "ex.html"
+		},
+		"SearchParameter": {
+			"template-base": "base.html"
+		},
+		"StructureDefinition": {
+			"template-mappings": "sd-mappings.html",
+			"template-base": "sd.html",
+			"template-defns": "sd-definitions.html",
+			"mappings": "StructureDefinition-{{[id]}}-mappings.html"
+		},
+		"Immunization": {
+			"template-base": "ex.html"
+		},
+		"Patient": {
+			"template-base": "ex.html"
+		},
+		"StructureMap": {
+			"content": false,
+			"script": false,
+			"template-base": "ex.html",
+			"profiles": false
+		},
+		"ConceptMap": {
+			"template-base": "base.html"
+		},
+		"Practitioner": {
+			"template-base": "ex.html"
+		},
+		"OperationDefinition": {
+			"template-base": "base.html"
+		},
+		"CodeSystem": {
+			"template-base": "base.html"
+		},
+		"Communication": {
+			"template-base": "ex.html"
+		},
+		"Any": {
+			"template-format": "format.html",
+			"template-base": "base.html"
+		},
+		"PractitionerRole": {
+			"template-base": "ex.html"
+		},
+		"ValueSet": {
+			"template-base": "base.html"
+		},
+		"CapabilityStatement": {
+			"template-base": "base.html"
+		},
+		"Observation": {
+			"template-base": "ex.html"
+		}
+	},
+	"resources": {
+		"Media/U3AT7": {
+			"base": "Media-U3AT7.html",
+			"defns": "Media-U3AT7-definitions.html"
+		},
+		"Media/U3BT9": {
+			"base": "Media-U3BT9.html",
+			"defns": "Media-U3BT9-definitions.html"
+		},
+		"Media/U3AF3": {
+			"base": "Media-U3AF3.html",
+			"defns": "Media-U3AF3-definitions.html"
+		},
+		"Media/U3BF4": {
+			"base": "Media-U3BF4.html",
+			"defns": "Media-U3BF4-definitions.html"
+		},
+		"Media/ConceptualFramework": {
+			"base": "Media-ConceptualFramework.html",
+			"defns": "Media-ConceptualFramework-definitions.html"
+		},
+		"Media/U3BT10": {
+			"base": "Media-U3BT10.html",
+			"defns": "Media-U3BT10-definitions.html"
+		},
+		"Media/GravityProjectmission": {
+			"base": "Media-GravityProjectmission.html",
+			"defns": "Media-GravityProjectmission-definitions.html"
+		},
+		"Media/U3AT8": {
+			"base": "Media-U3AT8.html",
+			"defns": "Media-U3AT8-definitions.html"
+		},
+		"Media/GravityProjectScope": {
+			"base": "Media-GravityProjectScope.html",
+			"defns": "Media-GravityProjectScope-definitions.html"
+		},
+		"Media/U3CT12": {
+			"base": "Media-U3CT12.html",
+			"defns": "Media-U3CT12-definitions.html"
+		},
+		"Media/Figure1WhatGoesintoyourHealth": {
+			"base": "Media-Figure1WhatGoesintoyourHealth.html",
+			"defns": "Media-Figure1WhatGoesintoyourHealth-definitions.html"
+		},
+		"Media/U3CF5": {
+			"base": "Media-U3CF5.html",
+			"defns": "Media-U3CF5-definitions.html"
+		},
+		"Media/DataModeling": {
+			"base": "Media-DataModeling.html",
+			"defns": "Media-DataModeling-definitions.html"
+		},
+		"Bundle/example-task-list-questionnaire": {
+			"base": "Bundle-example-task-list-questionnaire.html",
+			"defns": "Bundle-example-task-list-questionnaire-definitions.html"
+		},
+		"Media/UC3T11": {
+			"base": "Media-UC3T11.html",
+			"defns": "Media-UC3T11-definitions.html"
+		},
+		"Media/usecase1sequence": {
+			"base": "Media-usecase1sequence.html",
+			"defns": "Media-usecase1sequence-definitions.html"
+		},
+		"ValueSet/grv-sctt-vs-f82a9dd7-ba64-18d1-bc19-98ab4a9d02fa": {
+			"base": "ValueSet-grv-sctt-vs-f82a9dd7-ba64-18d1-bc19-98ab4a9d02fa.html",
+			"defns": "ValueSet-grv-sctt-vs-f82a9dd7-ba64-18d1-bc19-98ab4a9d02fa-definitions.html"
+		},
+		"Media/ScreenShot20191212at105213AM": {
+			"base": "Media-ScreenShot20191212at105213AM.html",
+			"defns": "Media-ScreenShot20191212at105213AM-definitions.html"
+		},
+		"ValueSet/grv-sctt-vs-8e8bc50a-bb9d-1753-2461-2419df70cef8": {
+			"base": "ValueSet-grv-sctt-vs-8e8bc50a-bb9d-1753-2461-2419df70cef8.html",
+			"defns": "ValueSet-grv-sctt-vs-8e8bc50a-bb9d-1753-2461-2419df70cef8-definitions.html"
+		},
+		"Media/ScreenShot20191212at104950AM": {
+			"base": "Media-ScreenShot20191212at104950AM.html",
+			"defns": "Media-ScreenShot20191212at104950AM-definitions.html"
+		},
+		"CodeSystem/grv-sctt": {
+			"base": "CodeSystem-grv-sctt.html",
+			"defns": "CodeSystem-grv-sctt-definitions.html"
+		},
+		"Media/ScreenShot20191212at105231AM": {
+			"base": "Media-ScreenShot20191212at105231AM.html",
+			"defns": "Media-ScreenShot20191212at105231AM-definitions.html"
+		},
+		"Media/ScreenShot20191212at105133AM": {
+			"base": "Media-ScreenShot20191212at105133AM.html",
+			"defns": "Media-ScreenShot20191212at105133AM-definitions.html"
+		},
+		"Media/ScreenShot20191212at105149AM": {
+			"base": "Media-ScreenShot20191212at105149AM.html",
+			"defns": "Media-ScreenShot20191212at105149AM-definitions.html"
+		},
+		"Media/ScreenShot20191212at105017AM": {
+			"base": "Media-ScreenShot20191212at105017AM.html",
+			"defns": "Media-ScreenShot20191212at105017AM-definitions.html"
+		},
+		"StructureDefinition/Gravity-Condition-FoodInsecurity-1": {
+			"base": "StructureDefinition-Gravity-Condition-FoodInsecurity-1.html",
+			"defns": "StructureDefinition-Gravity-Condition-FoodInsecurity-1-definitions.html"
+		},
+		"StructureDefinition/Gravity-Observation-FoodInsecurity-1": {
+			"base": "StructureDefinition-Gravity-Observation-FoodInsecurity-1.html",
+			"defns": "StructureDefinition-Gravity-Observation-FoodInsecurity-1-definitions.html"
+		},
+		"StructureDefinition/Gravity-Goal-FoodInsecurity-1": {
+			"base": "StructureDefinition-Gravity-Goal-FoodInsecurity-1.html",
+			"defns": "StructureDefinition-Gravity-Goal-FoodInsecurity-1-definitions.html"
+		},
+		"Media/mindmap1": {
+			"base": "Media-mindmap1.html",
+			"defns": "Media-mindmap1-definitions.html"
+		},
+		"Media/mindmap2": {
+			"base": "Media-mindmap2.html",
+			"defns": "Media-mindmap2-definitions.html"
+		},
+		"Media/mindmap3composition": {
+			"base": "Media-mindmap3composition.html",
+			"defns": "Media-mindmap3composition-definitions.html"
+		},
+		"Questionnaire/04ba3565-2a9b-46ff-ab19-b67e918890d4": {
+			"base": "Questionnaire-04ba3565-2a9b-46ff-ab19-b67e918890d4.html",
+			"defns": "Questionnaire-04ba3565-2a9b-46ff-ab19-b67e918890d4-definitions.html"
+		},
+		"Media/U1T1": {
+			"base": "Media-U1T1.html",
+			"defns": "Media-U1T1-definitions.html"
+		},
+		"Media/U1F1": {
+			"base": "Media-U1F1.html",
+			"defns": "Media-U1F1-definitions.html"
+		},
+		"Media/U1T2": {
+			"base": "Media-U1T2.html",
+			"defns": "Media-U1T2-definitions.html"
+		},
+		"Media/U1T3": {
+			"base": "Media-U1T3.html",
+			"defns": "Media-U1T3-definitions.html"
+		},
+		"Media/U2T5": {
+			"base": "Media-U2T5.html",
+			"defns": "Media-U2T5-definitions.html"
+		},
+		"Media/U2T4": {
+			"base": "Media-U2T4.html",
+			"defns": "Media-U2T4-definitions.html"
+		},
+		"Media/U2F2": {
+			"base": "Media-U2F2.html",
+			"defns": "Media-U2F2-definitions.html"
+		},
+		"Media/U2T6": {
+			"base": "Media-U2T6.html",
+			"defns": "Media-U2T6-definitions.html"
+		}
+	},
+	"fixed-business-version": "0.0.1",
+	"dependencyList": []
+}

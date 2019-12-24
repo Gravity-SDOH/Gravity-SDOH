@@ -1,0 +1,176 @@
+{
+	"resourceType": "Questionnaire",
+	"id": "04ba3565-2a9b-46ff-ab19-b67e918890d4",
+	"meta": {
+		"versionId": "5",
+		"lastUpdated": "2019-12-11T13:23:03.000-05:00",
+		"profile": [
+			"http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|2.7"
+		]
+	},
+	"extension": [
+		{
+			"url": "http://hl7.org/fhir/us/sdc/StructureDefinition/sdc-questionnaire-endpoint",
+			"valueString": "https://requester.organization.com/fhir/baseR4"
+		}
+	],
+	"url": "http://example.org/fhir/StructureDefinition/Questionnaire/04ba3565-2a9b-46ff-ab19-b67e918890d4",
+	"identifier": [
+		{
+			"system": "http://www.maxmddirect.com/hl7/fhir/grv-locali-screenings",
+			"value": "222580b3-1701-44b2-885c-6352ca5a6adf"
+		}
+	],
+	"name": "example-hunger-vital-sign-screening",
+	"title": "example-hunger-vital-sign-screening",
+	"status": "active",
+	"subjectType": [
+		"Patient"
+	],
+	"date": "2019-12-03T16:09:54.445Z",
+	"item": [
+		{
+			"linkId": "/88121-9",
+			"code": [
+				{
+					"system": "http://loinc.org",
+					"code": "88121-9",
+					"display": "Hunger Vital Sign [HVS]"
+				}
+			],
+			"text": "Hunger Vital Sign [HVS]",
+			"type": "group",
+			"required": false,
+			"item": [
+				{
+					"extension": [
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+							"valueCodeableConcept": {
+								"coding": [
+									{
+										"system": "http://hl7.org/fhir/questionnaire-item-control",
+										"code": "drop-down",
+										"display": "Drop down"
+									}
+								],
+								"text": "Drop down"
+							}
+						}
+					],
+					"linkId": "/88121-9/88122-7",
+					"code": [
+						{
+							"system": "http://loinc.org",
+							"code": "88122-7",
+							"display": "Within the past 12Mo we worried whether our food would run out before we got money to buy more"
+						}
+					],
+					"text": "Within the past 12Mo we worried whether our food would run out before we got money to buy more",
+					"type": "choice",
+					"required": false,
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "LA28397-0",
+								"display": "Often true"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "LA6729-3",
+								"display": "Sometimes true"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "LA28398-8",
+								"display": "Never true"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "LA15775-2",
+								"display": "Don't know/refused"
+							}
+						}
+					]
+				},
+				{
+					"extension": [
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+							"valueCodeableConcept": {
+								"coding": [
+									{
+										"system": "http://hl7.org/fhir/questionnaire-item-control",
+										"code": "drop-down",
+										"display": "Drop down"
+									}
+								],
+								"text": "Drop down"
+							}
+						}
+					],
+					"linkId": "/88121-9/88123-5",
+					"code": [
+						{
+							"system": "http://loinc.org",
+							"code": "88123-5",
+							"display": "Within the past 12Mo the food we bought just didn't last and we didn't have money to get more"
+						}
+					],
+					"text": "Within the past 12Mo the food we bought just didn't last and we didn't have money to get more",
+					"type": "choice",
+					"required": false,
+					"answerOption": [
+						{
+							"valueCoding": {
+								"code": "LA28397-0",
+								"display": "Often true"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "LA6729-3",
+								"display": "Sometimes true"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "LA28398-8",
+								"display": "Never true"
+							}
+						},
+						{
+							"valueCoding": {
+								"code": "LA15775-2",
+								"display": "Don't know/refused"
+							}
+						}
+					]
+				},
+				{
+					"extension": [
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+							"valueCodeableConcept": {
+								"coding": [
+									{
+										"system": "http://hl7.org/fhir/questionnaire-item-control",
+										"code": "help",
+										"display": "Help-Button"
+									}
+								],
+								"text": "Help-Button"
+							}
+						}
+					],
+					"linkId": "/88121-9-help",
+					"text": "The Hunger Vital Sign™ identifies individuals and families as being at risk for food insecurity. A positive screen is either question answered with \"often true\" or \"sometimes true.\"",
+					"type": "display"
+				}
+			]
+		}
+	]
+}

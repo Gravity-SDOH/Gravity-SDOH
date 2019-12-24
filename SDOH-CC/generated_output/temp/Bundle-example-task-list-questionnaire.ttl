@@ -1,0 +1,304 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.maxmd.org/fhir/us/maxmd/Bundle/example-task-list-questionnaire> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example-task-list-questionnaire"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "1" ];
+     fhir:Meta.lastUpdated [ fhir:value "2019-12-11T13:17:28.000-05:00"^^xsd:dateTime ]
+  ];
+  fhir:Bundle.type [ fhir:value "collection"];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://example.org/fhir/StructureDefinition/Questionnaire/04ba3565-2a9b-46ff-ab19-b67e918890d4" ];
+     fhir:Bundle.entry.resource <http://example.org/fhir/StructureDefinition/Questionnaire/04ba3565-2a9b-46ff-ab19-b67e918890d4>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Questionnaire" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://example.org/fhir/StructureDefinition/SDOH-Patient-List" ];
+     fhir:Bundle.entry.resource <http://example.org/fhir/StructureDefinition/SDOH-Patient-List>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "List" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://example.org/fhir/StructureDefinition/US-Core-Organization" ];
+     fhir:Bundle.entry.resource <http://example.org/fhir/StructureDefinition/US-Core-Organization>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Organization" ];
+       fhir:Bundle.entry.request.ifNoneExist [ fhir:value "Organization?identifier=http%3A%2F%2Fgrv.hl7t-tasks.tmp%2Fgrv-hl7t-org-identifier|123" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://example.org/fhir/StructureDefinition/SDOH-Screening-Task" ];
+     fhir:Bundle.entry.resource <http://example.org/fhir/StructureDefinition/SDOH-Screening-Task>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Task" ]
+     ]
+  ] .
+
+<http://example.org/fhir/StructureDefinition/Questionnaire/04ba3565-2a9b-46ff-ab19-b67e918890d4> a fhir:Questionnaire;
+  fhir:Resource.id [ fhir:value "04ba3565-2a9b-46ff-ab19-b67e918890d4"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 04ba3565-2a9b-46ff-ab19-b67e918890d4</p><p><b>url</b>: <a href=\"http://example.org/fhir/StructureDefinition/Questionnaire/04ba3565-2a9b-46ff-ab19-b67e918890d4\">http://example.org/fhir/StructureDefinition/Questionnaire/04ba3565-2a9b-46ff-ab19-b67e918890d4</a></p><p><b>identifier</b>: 222580b3-1701-44b2-885c-6352ca5a6adf</p><p><b>name</b>: Food Insecurity (Hunger Vital Sign)</p><p><b>title</b>: Food Insecurity</p><p><b>status</b>: active</p><p><b>subjectType</b>: Patient</p><p><b>date</b>: Dec 3, 2019 11:09:54 AM</p><blockquote><p><b>item</b></p><p><b>linkId</b>: /88121-9</p><p><b>code</b>: Hunger Vital Sign [HVS] (Details: LOINC code 88121-9 = 'Hunger Vital Sign [HVS]', stated as 'Hunger Vital Sign [HVS]')</p><p><b>text</b>: Hunger Vital Sign [HVS]</p><p><b>type</b>: group</p><p><b>required</b>: false</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/sdc/StructureDefinition/sdc-questionnaire-endpoint" ];
+     fhir:Extension.valueString [ fhir:value "https://requester.organization.com/fhir/baseR4" ]
+  ];
+  fhir:Questionnaire.url [ fhir:value "http://example.org/fhir/StructureDefinition/Questionnaire/04ba3565-2a9b-46ff-ab19-b67e918890d4"];
+  fhir:Questionnaire.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://www.maxmddirect.com/hl7/fhir/grv-locali-screenings" ];
+     fhir:Identifier.value [ fhir:value "222580b3-1701-44b2-885c-6352ca5a6adf" ]
+  ];
+  fhir:Questionnaire.name [ fhir:value "Food Insecurity (Hunger Vital Sign)"];
+  fhir:Questionnaire.title [ fhir:value "Food Insecurity"];
+  fhir:Questionnaire.status [ fhir:value "active"];
+  fhir:Questionnaire.subjectType [
+     fhir:value "Patient";
+     fhir:index 0
+  ];
+  fhir:Questionnaire.date [ fhir:value "2019-12-03T16:09:54.445Z"^^xsd:dateTime];
+  fhir:Questionnaire.item [
+     fhir:index 0;
+     fhir:Questionnaire.item.linkId [ fhir:value "/88121-9" ];
+     fhir:Questionnaire.item.code [
+       fhir:index 0;
+       a loinc:88121-9;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "88121-9" ];
+       fhir:Coding.display [ fhir:value "Hunger Vital Sign [HVS]" ]
+     ];
+     fhir:Questionnaire.item.text [ fhir:value "Hunger Vital Sign [HVS]" ];
+     fhir:Questionnaire.item.type [ fhir:value "group" ];
+     fhir:Questionnaire.item.required [ fhir:value "false"^^xsd:boolean ];
+     fhir:Questionnaire.item.item [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" ];
+         fhir:Extension.valueCodeableConcept [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "http://hl7.org/fhir/questionnaire-item-control" ];
+             fhir:Coding.code [ fhir:value "drop-down" ];
+             fhir:Coding.display [ fhir:value "Drop down" ]
+           ];
+           fhir:CodeableConcept.text [ fhir:value "Drop down" ]
+         ]
+       ];
+       fhir:Questionnaire.item.linkId [ fhir:value "/88121-9/88122-7" ];
+       fhir:Questionnaire.item.code [
+         fhir:index 0;
+         a loinc:88122-7;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "88122-7" ];
+         fhir:Coding.display [ fhir:value "Within the past 12Mo we worried whether our food would run out before we got money to buy more" ]
+       ];
+       fhir:Questionnaire.item.text [ fhir:value "Within the past 12Mo we worried whether our food would run out before we got money to buy more" ];
+       fhir:Questionnaire.item.type [ fhir:value "choice" ];
+       fhir:Questionnaire.item.required [ fhir:value "false"^^xsd:boolean ];
+       fhir:Questionnaire.item.answerOption [
+         fhir:index 0;
+         fhir:Questionnaire.item.answerOption.valueCoding [
+           fhir:Coding.code [ fhir:value "LA28397-0" ];
+           fhir:Coding.display [ fhir:value "Often true" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Questionnaire.item.answerOption.valueCoding [
+           fhir:Coding.code [ fhir:value "LA6729-3" ];
+           fhir:Coding.display [ fhir:value "Sometimes true" ]
+         ]
+       ], [
+         fhir:index 2;
+         fhir:Questionnaire.item.answerOption.valueCoding [
+           fhir:Coding.code [ fhir:value "LA28398-8" ];
+           fhir:Coding.display [ fhir:value "Never true" ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:Questionnaire.item.answerOption.valueCoding [
+           fhir:Coding.code [ fhir:value "LA15775-2" ];
+           fhir:Coding.display [ fhir:value "Don't know/refused" ]
+         ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" ];
+         fhir:Extension.valueCodeableConcept [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "http://hl7.org/fhir/questionnaire-item-control" ];
+             fhir:Coding.code [ fhir:value "drop-down" ];
+             fhir:Coding.display [ fhir:value "Drop down" ]
+           ];
+           fhir:CodeableConcept.text [ fhir:value "Drop down" ]
+         ]
+       ];
+       fhir:Questionnaire.item.linkId [ fhir:value "/88121-9/88123-5" ];
+       fhir:Questionnaire.item.code [
+         fhir:index 0;
+         a loinc:88123-5;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "88123-5" ];
+         fhir:Coding.display [ fhir:value "Within the past 12Mo the food we bought just didn't last and we didn't have money to get more" ]
+       ];
+       fhir:Questionnaire.item.text [ fhir:value "Within the past 12Mo the food we bought just didn't last and we didn't have money to get more" ];
+       fhir:Questionnaire.item.type [ fhir:value "choice" ];
+       fhir:Questionnaire.item.required [ fhir:value "false"^^xsd:boolean ];
+       fhir:Questionnaire.item.answerOption [
+         fhir:index 0;
+         fhir:Questionnaire.item.answerOption.valueCoding [
+           fhir:Coding.code [ fhir:value "LA28397-0" ];
+           fhir:Coding.display [ fhir:value "Often true" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Questionnaire.item.answerOption.valueCoding [
+           fhir:Coding.code [ fhir:value "LA6729-3" ];
+           fhir:Coding.display [ fhir:value "Sometimes true" ]
+         ]
+       ], [
+         fhir:index 2;
+         fhir:Questionnaire.item.answerOption.valueCoding [
+           fhir:Coding.code [ fhir:value "LA28398-8" ];
+           fhir:Coding.display [ fhir:value "Never true" ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:Questionnaire.item.answerOption.valueCoding [
+           fhir:Coding.code [ fhir:value "LA15775-2" ];
+           fhir:Coding.display [ fhir:value "Don't know/refused" ]
+         ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" ];
+         fhir:Extension.valueCodeableConcept [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "http://hl7.org/fhir/questionnaire-item-control" ];
+             fhir:Coding.code [ fhir:value "help" ];
+             fhir:Coding.display [ fhir:value "Help-Button" ]
+           ];
+           fhir:CodeableConcept.text [ fhir:value "Help-Button" ]
+         ]
+       ];
+       fhir:Questionnaire.item.linkId [ fhir:value "/88121-9-help" ];
+       fhir:Questionnaire.item.text [ fhir:value "The Hunger Vital Sign™ identifies individuals and families as being at risk for food insecurity. A positive screen is either question answered with \"often true\" or \"sometimes true.\"" ];
+       fhir:Questionnaire.item.type [ fhir:value "display" ]
+     ]
+  ] .
+
+<http://example.org/fhir/StructureDefinition/SDOH-Patient-List> a fhir:List;
+  fhir:Resource.id [ fhir:value "SDOH-Patient-List"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: SDOH-Patient-List</p><p><b>status</b>: current</p><p><b>title</b>: Patient List</p><blockquote><p><b>entry</b></p><p><b>item</b>: <a href=\"Patient?given=Alice&amp;family=Newman&amp;address-postalcode=97006&amp;birthdate=1970-05-01\">Patient?given=Alice&amp;family=Newman&amp;address-postalcode=97006&amp;birthdate=1970-05-01</a></p></blockquote><blockquote><p><b>entry</b></p><p><b>item</b>: <a href=\"Patient?given=Jeremy&amp;family=Bates&amp;address-postalcode=97006&amp;birthdate=1980-08-01\">Patient?given=Jeremy&amp;family=Bates&amp;address-postalcode=97006&amp;birthdate=1980-08-01</a></p></blockquote></div>"
+  ];
+  fhir:List.status [ fhir:value "current"];
+  fhir:List.title [ fhir:value "Patient List"];
+  fhir:List.entry [
+     fhir:index 0;
+     fhir:List.entry.item [
+       fhir:Reference.reference [ fhir:value "Patient?given=Alice&family=Newman&address-postalcode=97006&birthdate=1970-05-01" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:List.entry.item [
+       fhir:Reference.reference [ fhir:value "Patient?given=Jeremy&family=Bates&address-postalcode=97006&birthdate=1980-08-01" ]
+     ]
+  ] .
+
+<http://example.org/fhir/StructureDefinition/US-Core-Organization> a fhir:Organization;
+  fhir:Resource.id [ fhir:value "US-Core-Organization"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: US-Core-Organization</p><p><b>identifier</b>: 123</p><p><b>active</b>: true</p><p><b>name</b>: Good Health Hospital</p><p><b>address</b>: 123 Main St Frot Lee NJ 07024 </p></div>"
+  ];
+  fhir:Organization.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://grv.hl7t-tasks.tmp/grv-hl7t-org-identifier" ];
+     fhir:Identifier.value [ fhir:value "123" ]
+  ];
+  fhir:Organization.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Organization.name [ fhir:value "Good Health Hospital"];
+  fhir:Organization.address [
+     fhir:index 0;
+     fhir:Address.line [
+       fhir:value "123 Main St";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "Frot Lee" ];
+     fhir:Address.state [ fhir:value "NJ" ];
+     fhir:Address.postalCode [ fhir:value "07024" ]
+  ] .
+
+<http://example.org/fhir/StructureDefinition/SDOH-Screening-Task> a fhir:Task;
+  fhir:Resource.id [ fhir:value "SDOH-Screening-Task"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: SDOH-Screening-Task</p><p><b>status</b>: requested</p><p><b>code</b>: Screen Patients <span style=\"background: LightGoldenRodYellow\">(Details : {http://grv.hl7t-tasks.tmp/grv-hl7t-tasks code 'grv-hl7-tasks-20191209143500ET' = 'grv-hl7-tasks-20191209143500ET', given as 'screen-pts'})</span></p><p><b>focus</b>: <a href=\"Questionnaire-04ba3565-2a9b-46ff-ab19-b67e918890d4.html\">Generated Summary: id: 04ba3565-2a9b-46ff-ab19-b67e918890d4; url: http://example.org/fhir/StructureDefinition/Questionnaire/04ba3565-2a9b-46ff-ab19-b67e918890d4; 222580b3-1701-44b2-885c-6352ca5a6adf; version: 0.0.1; name: example-hunger-vital-sign-screening; title: example-hunger-vital-sign-screening; status: active; subjectType: Patient; date: Dec 3, 2019 11:09:54 AM</a></p><p><b>for</b>: <a href=\"List/0bddd887-b878-4795-9964-378b3ca0d7e1\">List/0bddd887-b878-4795-9964-378b3ca0d7e1</a></p><p><b>requester</b>: <a href=\"Organization/3c26f307-1aa1-4701-ac43-3267ca601470\">Organization/3c26f307-1aa1-4701-ac43-3267ca601470</a></p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "https://www.maxmddirect.com/fhir/extension/sdc/task/type" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://www.maxmddirect.com/fhir/code/sdc/task/type" ];
+         fhir:Coding.code [ fhir:value "questionnaire" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Fullfill Questionnaire Task" ]
+     ]
+  ];
+  fhir:Task.status [ fhir:value "requested"];
+  fhir:Task.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://grv.hl7t-tasks.tmp/grv-hl7t-tasks" ];
+       fhir:Coding.code [ fhir:value "grv-hl7-tasks-20191209143500ET" ];
+       fhir:Coding.display [ fhir:value "screen-pts" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Screen Patients" ]
+  ];
+  fhir:Task.focus [
+     fhir:link <http://hl7.maxmd.org/fhir/us/maxmd/Questionnaire/04ba3565-2a9b-46ff-ab19-b67e918890d4>;
+     fhir:Reference.reference [ fhir:value "Questionnaire/04ba3565-2a9b-46ff-ab19-b67e918890d4" ]
+  ];
+  fhir:Task.for [
+     fhir:link <http://hl7.maxmd.org/fhir/us/maxmd/List/0bddd887-b878-4795-9964-378b3ca0d7e1>;
+     fhir:Reference.reference [ fhir:value "List/0bddd887-b878-4795-9964-378b3ca0d7e1" ]
+  ];
+  fhir:Task.requester [
+     fhir:link <http://hl7.maxmd.org/fhir/us/maxmd/Organization/3c26f307-1aa1-4701-ac43-3267ca601470>;
+     fhir:Reference.reference [ fhir:value "Organization/3c26f307-1aa1-4701-ac43-3267ca601470" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.maxmd.org/fhir/us/maxmd/Bundle/example-task-list-questionnaire.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

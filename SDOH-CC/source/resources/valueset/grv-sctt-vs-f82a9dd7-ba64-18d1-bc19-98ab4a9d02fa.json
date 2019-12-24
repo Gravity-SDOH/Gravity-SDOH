@@ -1,0 +1,29 @@
+{
+	"resourceType": "ValueSet",
+	"id": "grv-sctt-vs-f82a9dd7-ba64-18d1-bc19-98ab4a9d02fa",
+	"meta": {
+		"versionId": "2",
+		"lastUpdated": "2019-12-09T15:38:31.000-05:00"
+	},
+	"url": "https://trifolia-fhir-dev.lantanagroup.com/lantana_prod_hapi_r4/SDOH-CC/ValueSet/grv-sctt-vs-f82a9dd7-ba64-18d1-bc19-98ab4a9d02fa",
+	"name": "Gravity_ValueSet_ContextValue_1",
+	"status": "draft",
+	"compose": {
+		"include": [
+			{
+				"system": "http://grv.sctt.tmp/grv-sctt",
+				"version": "11000243100",
+				"concept": [
+					{
+						"code": "410516002",
+						"display": "Known absent (qualifier value)"
+					},
+					{
+						"code": "410515003",
+						"display": "Known present (qualifier value)"
+					}
+				]
+			}
+		]
+	}
+}

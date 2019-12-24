@@ -1,0 +1,326 @@
+{
+	"resourceType": "StructureDefinition",
+	"id": "Gravity-Condition-FoodInsecurity-1",
+	"meta": {
+		"versionId": "1",
+		"lastUpdated": "2019-12-10T10:16:37.000-05:00"
+	},
+	"url": "http://example.org/fhir/StructureDefinition/Gravity-Condition-FoodInsecurity-1",
+	"name": "Gravity_Condition_FoodInsecurity_1",
+	"status": "draft",
+	"description": "This profile supports Gravity Project data elements that focus on the Food Insecurity domain. The profile constrains Conditions related to: Food insecurity, Mild food insecurity, Moderate food insecurity, or Severe food insecurity. ",
+	"fhirVersion": "4.0.0",
+	"mapping": [
+		{
+			"identity": "workflow",
+			"uri": "http://hl7.org/fhir/workflow",
+			"name": "Workflow Pattern"
+		},
+		{
+			"identity": "sct-concept",
+			"uri": "http://snomed.info/conceptdomain",
+			"name": "SNOMED CT Concept Domain Binding"
+		},
+		{
+			"identity": "v2",
+			"uri": "http://hl7.org/v2",
+			"name": "HL7 v2 Mapping"
+		},
+		{
+			"identity": "rim",
+			"uri": "http://hl7.org/v3",
+			"name": "RIM Mapping"
+		},
+		{
+			"identity": "w5",
+			"uri": "http://hl7.org/fhir/fivews",
+			"name": "FiveWs Pattern Mapping"
+		},
+		{
+			"identity": "sct-attr",
+			"uri": "http://snomed.org/attributebinding",
+			"name": "SNOMED CT Attribute Binding"
+		}
+	],
+	"kind": "resource",
+	"abstract": false,
+	"type": "Condition",
+	"baseDefinition": "http://hl7.org/fhir/StructureDefinition/Condition",
+	"derivation": "constraint",
+	"differential": {
+		"element": [
+			{
+				"id": "Condition.clinicalStatus",
+				"path": "Condition.clinicalStatus",
+				"min": 1
+			},
+			{
+				"id": "Condition.clinicalStatus.coding",
+				"path": "Condition.clinicalStatus.coding",
+				"min": 1,
+				"max": "1"
+			},
+			{
+				"id": "Condition.clinicalStatus.coding.system",
+				"path": "Condition.clinicalStatus.coding.system",
+				"min": 1,
+				"fixedUri": "http://hl7.org/fhir/ValueSet/condition-clinical|4.0.0"
+			},
+			{
+				"id": "Condition.clinicalStatus.coding.code",
+				"path": "Condition.clinicalStatus.coding.code",
+				"min": 1,
+				"binding": {
+					"strength": "required",
+					"valueSet": "http://hl7.org/fhir/ValueSet/condition-clinical|4.0.0"
+				}
+			},
+			{
+				"id": "Condition.clinicalStatus.coding.display",
+				"path": "Condition.clinicalStatus.coding.display",
+				"min": 1
+			},
+			{
+				"id": "Condition.verificationStatus.coding",
+				"path": "Condition.verificationStatus.coding",
+				"min": 1,
+				"max": "1"
+			},
+			{
+				"id": "Condition.verificationStatus.coding.system",
+				"path": "Condition.verificationStatus.coding.system",
+				"min": 1,
+				"fixedUri": "http://hl7.org/fhir/ValueSet/condition-ver-status|4.0.0"
+			},
+			{
+				"id": "Condition.verificationStatus.coding.code",
+				"path": "Condition.verificationStatus.coding.code",
+				"min": 1,
+				"fixedCode": "confirmed",
+				"binding": {
+					"strength": "required",
+					"valueSet": "http://hl7.org/fhir/ValueSet/condition-ver-status|4.0.0"
+				}
+			},
+			{
+				"id": "Condition.verificationStatus.coding.display",
+				"path": "Condition.verificationStatus.coding.display",
+				"min": 1,
+				"fixedString": "Confirmed"
+			},
+			{
+				"id": "Condition.verificationStatus.coding.userSelected",
+				"path": "Condition.verificationStatus.coding.userSelected",
+				"max": "0"
+			},
+			{
+				"id": "Condition.category",
+				"path": "Condition.category",
+				"min": 1
+			},
+			{
+				"id": "Condition.category.coding",
+				"path": "Condition.category.coding",
+				"min": 1,
+				"max": "1"
+			},
+			{
+				"id": "Condition.category.coding.system",
+				"path": "Condition.category.coding.system",
+				"min": 1,
+				"fixedUri": "http://hl7.org/fhir/us/core/ValueSet/us-core-condition-category"
+			},
+			{
+				"id": "Condition.category.coding.code",
+				"path": "Condition.category.coding.code",
+				"min": 1,
+				"binding": {
+					"strength": "extensible",
+					"valueSet": "http://hl7.org/fhir/us/core/ValueSet/us-core-condition-category"
+				}
+			},
+			{
+				"id": "Condition.category.coding.display",
+				"path": "Condition.category.coding.display",
+				"min": 1
+			},
+			{
+				"id": "Condition.severity",
+				"path": "Condition.severity",
+				"max": "0"
+			},
+			{
+				"id": "Condition.severity.coding",
+				"path": "Condition.severity.coding",
+				"min": 1,
+				"max": "1"
+			},
+			{
+				"id": "Condition.severity.coding.system",
+				"path": "Condition.severity.coding.system",
+				"min": 1,
+				"fixedUri": "http://hl7.org/fhir/ValueSet/condition-severity"
+			},
+			{
+				"id": "Condition.severity.coding.code",
+				"path": "Condition.severity.coding.code",
+				"min": 1,
+				"binding": {
+					"strength": "required",
+					"valueSet": "http://hl7.org/fhir/ValueSet/condition-severity"
+				}
+			},
+			{
+				"id": "Condition.severity.coding.display",
+				"path": "Condition.severity.coding.display",
+				"min": 1
+			},
+			{
+				"id": "Condition.code",
+				"path": "Condition.code",
+				"min": 1
+			},
+			{
+				"id": "Condition.code.coding",
+				"path": "Condition.code.coding",
+				"min": 1,
+				"max": "1"
+			},
+			{
+				"id": "Condition.code.coding.system",
+				"path": "Condition.code.coding.system",
+				"min": 1,
+				"fixedUri": "http://snomed.info/sct"
+			},
+			{
+				"id": "Condition.code.coding.code",
+				"path": "Condition.code.coding.code",
+				"min": 1,
+				"binding": {
+					"strength": "required",
+					"valueSet": "https://trifolia-fhir-dev.lantanagroup.com/lantana_prod_hapi_r4/SDOH-CC/ValueSet/grv-sctt-vs-8e8bc50a-bb9d-1753-2461-2419df70cef8"
+				}
+			},
+			{
+				"id": "Condition.code.coding.display",
+				"path": "Condition.code.coding.display",
+				"min": 1
+			},
+			{
+				"id": "Condition.bodySite",
+				"path": "Condition.bodySite",
+				"max": "0"
+			},
+			{
+				"id": "Condition.subject",
+				"path": "Condition.subject",
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+						]
+					}
+				]
+			},
+			{
+				"id": "Condition.encounter",
+				"path": "Condition.encounter",
+				"min": 1,
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+						]
+					}
+				]
+			},
+			{
+				"id": "Condition.onset[x]",
+				"path": "Condition.onset[x]",
+				"type": [
+					{
+						"code": "Period"
+					}
+				]
+			},
+			{
+				"id": "Condition.abatement[x]",
+				"path": "Condition.abatement[x]",
+				"type": [
+					{
+						"code": "dateTime"
+					},
+					{
+						"code": "Period"
+					}
+				]
+			},
+			{
+				"id": "Condition.recorder",
+				"path": "Condition.recorder",
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole",
+							"http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+						]
+					}
+				]
+			},
+			{
+				"id": "Condition.asserter",
+				"path": "Condition.asserter",
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole",
+							"http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+						]
+					}
+				]
+			},
+			{
+				"id": "Condition.stage",
+				"path": "Condition.stage",
+				"max": "0"
+			},
+			{
+				"id": "Condition.evidence.code",
+				"path": "Condition.evidence.code",
+				"max": "0"
+			},
+			{
+				"id": "Condition.evidence.detail",
+				"path": "Condition.evidence.detail",
+				"max": "1",
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"https://trifolia-fhir-dev.lantanagroup.com/lantana_prod_hapi_r4/SDOH-CC/StructureDefinition/Gravity_Observation_FoodInsecurity_1"
+						]
+					}
+				]
+			},
+			{
+				"id": "Condition.note.author[x]",
+				"path": "Condition.note.author[x]",
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+						]
+					},
+					{
+						"code": "string"
+					}
+				]
+			}
+		]
+	}
+}

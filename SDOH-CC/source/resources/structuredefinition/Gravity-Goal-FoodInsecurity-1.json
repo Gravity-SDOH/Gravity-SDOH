@@ -1,0 +1,260 @@
+{
+	"resourceType": "StructureDefinition",
+	"id": "Gravity-Goal-FoodInsecurity-1",
+	"meta": {
+		"versionId": "1",
+		"lastUpdated": "2019-12-10T10:16:53.000-05:00"
+	},
+	"url": "http://example.org/fhir/StructureDefinition/Gravity-Goal-FoodInsecurity-1",
+	"name": "Gravity_Goal_FoodInsecurity_1",
+	"status": "draft",
+	"description": "This profile supports Gravity Project data elements that focus on the Food Insecurity domain. The profile constrains Goals related to: Food Security.",
+	"fhirVersion": "4.0.0",
+	"mapping": [
+		{
+			"identity": "v2",
+			"uri": "http://hl7.org/v2",
+			"name": "HL7 v2 Mapping"
+		},
+		{
+			"identity": "rim",
+			"uri": "http://hl7.org/v3",
+			"name": "RIM Mapping"
+		},
+		{
+			"identity": "w5",
+			"uri": "http://hl7.org/fhir/fivews",
+			"name": "FiveWs Pattern Mapping"
+		}
+	],
+	"kind": "resource",
+	"abstract": false,
+	"type": "Goal",
+	"baseDefinition": "http://hl7.org/fhir/StructureDefinition/Goal",
+	"derivation": "constraint",
+	"differential": {
+		"element": [
+			{
+				"id": "Goal.achievementStatus",
+				"path": "Goal.achievementStatus",
+				"min": 1,
+				"binding": {
+					"strength": "required"
+				}
+			},
+			{
+				"id": "Goal.achievementStatus.coding",
+				"path": "Goal.achievementStatus.coding",
+				"min": 1,
+				"max": "1"
+			},
+			{
+				"id": "Goal.achievementStatus.coding.system",
+				"path": "Goal.achievementStatus.coding.system",
+				"min": 1,
+				"fixedUri": "http://hl7.org/fhir/ValueSet/goal-achievement"
+			},
+			{
+				"id": "Goal.achievementStatus.coding.code",
+				"path": "Goal.achievementStatus.coding.code",
+				"min": 1,
+				"binding": {
+					"strength": "required",
+					"valueSet": "http://hl7.org/fhir/ValueSet/goal-achievement"
+				}
+			},
+			{
+				"id": "Goal.achievementStatus.coding.display",
+				"path": "Goal.achievementStatus.coding.display",
+				"min": 1
+			},
+			{
+				"id": "Goal.description.coding",
+				"path": "Goal.description.coding",
+				"min": 1,
+				"max": "1"
+			},
+			{
+				"id": "Goal.description.coding.system",
+				"path": "Goal.description.coding.system",
+				"min": 1,
+				"fixedUri": "http://snomed.info/sct"
+			},
+			{
+				"id": "Goal.description.coding.code",
+				"path": "Goal.description.coding.code",
+				"min": 1,
+				"fixedCode": "grv-sctt-91000243106"
+			},
+			{
+				"id": "Goal.description.coding.display",
+				"path": "Goal.description.coding.display",
+				"min": 1,
+				"fixedString": "Food security (finding)"
+			},
+			{
+				"id": "Goal.description.coding.userSelected",
+				"path": "Goal.description.coding.userSelected",
+				"max": "0"
+			},
+			{
+				"id": "Goal.subject",
+				"path": "Goal.subject",
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+						]
+					}
+				]
+			},
+			{
+				"id": "Goal.target",
+				"path": "Goal.target",
+				"min": 1,
+				"max": "1"
+			},
+			{
+				"id": "Goal.target.measure",
+				"path": "Goal.target.measure",
+				"min": 1
+			},
+			{
+				"id": "Goal.target.measure.coding",
+				"path": "Goal.target.measure.coding",
+				"min": 1,
+				"max": "1"
+			},
+			{
+				"id": "Goal.target.measure.coding.system",
+				"path": "Goal.target.measure.coding.system",
+				"min": 1,
+				"fixedUri": "http://snomed.info/sct"
+			},
+			{
+				"id": "Goal.target.measure.coding.code",
+				"path": "Goal.target.measure.coding.code",
+				"min": 1,
+				"fixedCode": "733423003"
+			},
+			{
+				"id": "Goal.target.measure.coding.display",
+				"path": "Goal.target.measure.coding.display",
+				"min": 1,
+				"fixedString": "Food insecurity (finding)"
+			},
+			{
+				"id": "Goal.target.measure.coding.userSelected",
+				"path": "Goal.target.measure.coding.userSelected",
+				"max": "0"
+			},
+			{
+				"id": "Goal.target.detail[x]",
+				"path": "Goal.target.detail[x]",
+				"min": 1,
+				"type": [
+					{
+						"code": "CodeableConcept"
+					}
+				]
+			},
+			{
+				"id": "Goal.target.detail[x].coding",
+				"path": "Goal.target.detail[x].coding",
+				"min": 1,
+				"max": "1"
+			},
+			{
+				"id": "Goal.target.detail[x].coding.system",
+				"path": "Goal.target.detail[x].coding.system",
+				"min": 1,
+				"fixedUri": "http://snomed.info/sct"
+			},
+			{
+				"id": "Goal.target.detail[x].coding.code",
+				"path": "Goal.target.detail[x].coding.code",
+				"min": 1,
+				"fixedCode": "410516002"
+			},
+			{
+				"id": "Goal.target.detail[x].coding.display",
+				"path": "Goal.target.detail[x].coding.display",
+				"min": 1,
+				"fixedString": "Known absent (qualifier value)"
+			},
+			{
+				"id": "Goal.target.detail[x].coding.userSelected",
+				"path": "Goal.target.detail[x].coding.userSelected",
+				"max": "0"
+			},
+			{
+				"id": "Goal.statusDate",
+				"path": "Goal.statusDate",
+				"min": 1
+			},
+			{
+				"id": "Goal.expressedBy",
+				"path": "Goal.expressedBy",
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner",
+							"http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"
+						]
+					}
+				]
+			},
+			{
+				"id": "Goal.addresses",
+				"path": "Goal.addresses",
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"https://trifolia-fhir-dev.lantanagroup.com/lantana_prod_hapi_r4/SDOH-CC/StructureDefinition/Gravity_Condition_FoodInsecurity_1",
+							"http://hl7.org/fhir/StructureDefinition/ServiceRequest",
+							"http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+						]
+					}
+				]
+			},
+			{
+				"id": "Goal.note.author[x]",
+				"path": "Goal.note.author[x]",
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"http://hl7.org/fhir/StructureDefinition/Patient",
+							"http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+							"http://hl7.org/fhir/StructureDefinition/Organization",
+							"http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+						]
+					},
+					{
+						"code": "string"
+					}
+				]
+			},
+			{
+				"id": "Goal.outcomeCode",
+				"path": "Goal.outcomeCode",
+				"max": "0"
+			},
+			{
+				"id": "Goal.outcomeReference",
+				"path": "Goal.outcomeReference",
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"https://trifolia-fhir-dev.lantanagroup.com/lantana_prod_hapi_r4/SDOH-CC/StructureDefinition/Gravity_Observation_FoodInsecurity_1"
+						]
+					}
+				]
+			}
+		]
+	}
+}

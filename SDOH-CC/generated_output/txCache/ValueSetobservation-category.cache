@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/ValueSet/observation-category",
+  "code" : "social-history"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://hl7.org/fhir/ValueSet/observation-category\" is not known (encountered paired with code = \"social-history\"); The code provided (http://hl7.org/fhir/ValueSet/observation-category#social-history) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------

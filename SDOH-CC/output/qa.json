@@ -1,0 +1,10 @@
+{
+  "url": "http://hl7.maxmd.org/fhir/us/maxmd/ImplementationGuide/SDOH-CC",
+  "name": "SDOH_CC",
+  "package-id": "SDOH-Clinical-Care",
+  "ig-ver": "0.0.1",
+  "date": "Mon, 23 Dec, 2019 16:16:42 -0500",
+  "exception": "Cannot run program \"jekyll\" (in directory \"/home/cliu/Downloads/SDOH-CC/generated_output/temp\"): error\u003d2, No such file or directory",
+  "version": "4.0.1",
+  "tool": "4.1.0 (3)"
+}

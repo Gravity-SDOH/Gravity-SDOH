@@ -1,0 +1,78 @@
+---
+# jekyll header
+level: 2
+template: base
+active: format
+layout: fhir-artifact
+type: Bundle
+id: example-task-list-questionnaire
+---
+
+<!-- ig template for many conformance resource html pages  ('base' in definitions file)  can not be used for conformance resources that have more that a single base template. e.g.,  sd since there are mapping and definitions templates for it as well  they need to be split out into 3 separate templates -->
+
+<!-- ============ CONTENT CONTENT=============== -->
+
+{% case 'Bundle' %} <!-- content depends on type -->
+{% when 'ValueSet' %}
+<!-- ============VAlUESET CONTENT CONTENT=============== -->
+
+  {% include Bundle-example-task-list-questionnaire-summary.xhtml %}
+  {% include Bundle-example-task-list-questionnaire-xref.xhtml %}
+  {% include Bundle-example-task-list-questionnaire-cld.xhtml %}
+
+  <h3>Expansion</h3>
+
+  {% include Bundle-example-task-list-questionnaire-expansion.xhtml %}
+<!-- ============VAlUESET CONTENT CONTENT=============== -->
+
+<!-- ( % when 'StructureMap' % }
+============StructureMap CONTENT CONTENT===============
+  ( % include nav-tabs.html type="Bundle" id="example-task-list-questionnaire" active="content" % }
+
+  <p>
+  Thise is the mapping between FHIR resources and the Logical Model:
+  </p>
+
+  <a name="summary"> </a>
+  <h2>Summary</h2>
+  ( % include Bundle-example-task-list-questionnaire-summary.xhtml % }
+  <br/>
+
+  <h2>Content</h2>
+  ( %  include Bundle-example-task-list-questionnaire-content.xhtml % }
+  <br/>
+
+  <a name="script"> </a>
+  <h2>Script</h2>
+  <pre>
+  ( % include Bundle-example-task-list-questionnaire-script.xhtml % }
+  </pre>
+============StructureMap CONTENT CONTENT=============== -->
+
+{% when 'OperationDefinition' %}
+<!-- ============OperationDefinition CONTENT CONTENT=============== -->
+
+  {% include Bundle-example-task-list-questionnaire-html.xhtml %}
+
+  {% capture my-include %}{% include example-task-list-questionnaire.md %}{% endcapture %}{{ my-include | markdownify }}  <!--add inline examples here -->
+<!-- ============OperationDefinition CONTENT CONTENT=============== -->
+
+{% else %}
+<!-- ============CodeSystem ConceptMap CapabilityStatement CONTENT CONTENT=============== -->
+
+  <h2>Bundle: example-task-list-questionnaire</h2>
+
+  {% include Bundle-example-task-list-questionnaire-html.xhtml %}
+  <!-- ============CodeSystem ConceptMap CapabilityStatement CONTENT CONTENT=============== -->
+
+{% endcase %}
+
+
+<!-- simple format links
+<p>
+Formats: <a href="Bundle-example-task-list-questionnaire.html">Narrative</a>, <a href="Bundle-example-task-list-questionnaire.xml.html">XML</a>, <a href="Bundle-example-task-list-questionnaire.json.html">JSON</a>, <a href="Bundle-example-task-list-questionnaire.ttl.html">Turtle</a>
+</p>
+-->
+
+
+  <!-- ==============END CONTENT END CONTENT=================== -->

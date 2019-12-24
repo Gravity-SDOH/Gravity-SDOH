@@ -1,0 +1,26 @@
+﻿<html>
+<head>
+  <title>Bundle-example-task-list-questionnaire-validation</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<table class="grid">
+<tr><td><b>Level</b></td><td><b>Type</b></td><td><b>Location</b></td><td><b>Message</b></td></tr>
+<tr><td>error</td><td>invariant</td><td>Bundle/example-task-list-questionnaire: Bundle</td><td>bdl-3: entry.request mandatory for batch/transaction/history, otherwise prohibited [entry.all(request.exists() = ((%resource.type = 'batch') or (%resource.type = 'transaction') or (%resource.type = 'history')))]</td><td></td></tr>
+<tr><td>error</td><td>structure</td><td>Bundle/example-task-list-questionnaire: Bundle.entry[0].resource.extension[0]</td><td>The extension http://hl7.org/fhir/us/sdc/StructureDefinition/sdc-questionnaire-endpoint is unknown, and not allowed here</td><td></td></tr>
+<tr><td>error</td><td>invalid</td><td>Bundle/example-task-list-questionnaire: Bundle.entry[0].resource.extension[0].url</td><td>URL value 'http://hl7.org/fhir/us/sdc/StructureDefinition/sdc-questionnaire-endpoint' does not resolve</td><td></td></tr>
+<tr><td>error</td><td>structure</td><td>Bundle/example-task-list-questionnaire: Bundle.entry[1].resource</td><td>Profile http://hl7.org/fhir/StructureDefinition/List, Element 'Bundle.entry[1].resource.mode': minimum required = 1, but only found 0</td><td></td></tr>
+<tr><td>error</td><td>invalid</td><td>Bundle/example-task-list-questionnaire: Bundle.entry[1].resource.entry[0].item</td><td>Relative URLs must be of the format [ResourceName]/[id].  Encountered Patient?given=Alice&amp;family=Newman&amp;address-postalcode=97006&amp;birthdate=1970-05-01</td><td></td></tr>
+<tr><td>error</td><td>structure</td><td>Bundle/example-task-list-questionnaire: Bundle.entry[1].resource.entry[0].item</td><td>Unable to resolve resource 'Patient?given=Alice&amp;family=Newman&amp;address-postalcode=97006&amp;birthdate=1970-05-01'</td><td></td></tr>
+<tr><td>error</td><td>invalid</td><td>Bundle/example-task-list-questionnaire: Bundle.entry[1].resource.entry[1].item</td><td>Relative URLs must be of the format [ResourceName]/[id].  Encountered Patient?given=Jeremy&amp;family=Bates&amp;address-postalcode=97006&amp;birthdate=1980-08-01</td><td></td></tr>
+<tr><td>error</td><td>structure</td><td>Bundle/example-task-list-questionnaire: Bundle.entry[1].resource.entry[1].item</td><td>Unable to resolve resource 'Patient?given=Jeremy&amp;family=Bates&amp;address-postalcode=97006&amp;birthdate=1980-08-01'</td><td></td></tr>
+<tr><td>error</td><td>structure</td><td>Bundle/example-task-list-questionnaire: Bundle.entry[3].resource</td><td>Profile http://hl7.org/fhir/StructureDefinition/Task, Element 'Bundle.entry[3].resource.intent': minimum required = 1, but only found 0</td><td></td></tr>
+<tr><td>error</td><td>structure</td><td>Bundle/example-task-list-questionnaire: Bundle.entry[3].resource.extension[0]</td><td>The extension https://www.maxmddirect.com/fhir/extension/sdc/task/type is unknown, and not allowed here</td><td></td></tr>
+<tr><td>error</td><td>structure</td><td>Bundle/example-task-list-questionnaire: Bundle.entry[3].resource.for</td><td>Unable to resolve resource 'List/0bddd887-b878-4795-9964-378b3ca0d7e1'</td><td></td></tr>
+<tr><td>error</td><td>structure</td><td>Bundle/example-task-list-questionnaire: Bundle.entry[3].resource.requester</td><td>Unable to resolve resource 'Organization/3c26f307-1aa1-4701-ac43-3267ca601470'</td><td></td></tr>
+<tr><td>warning</td><td>invariant</td><td>Bundle/example-task-list-questionnaire: Bundle.entry[0].resource</td><td>que-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]</td><td></td></tr>
+<tr><td>warning</td><td>code-invalid</td><td>Bundle/example-task-list-questionnaire: Bundle.entry[0].resource.item[0].item[0].code[0]</td><td>The display &quot;Within the past 12Mo we worried whether our food would run out before we got money to buy more&quot; is not a valid display for the code {http://loinc.org}88122-7 - should be one of [&quot;Within the past 12 months we worried whether our food would run out before we got money to buy more [U.S. FSS]&quot;,]</td><td></td></tr>
+<tr><td>warning</td><td>code-invalid</td><td>Bundle/example-task-list-questionnaire: Bundle.entry[0].resource.item[0].item[1].code[0]</td><td>The display &quot;Within the past 12Mo the food we bought just didn't last and we didn't have money to get more&quot; is not a valid display for the code {http://loinc.org}88123-5 - should be one of [&quot;Within the past 12 months the food we bought just didn't last and we didn't have money to get more [U.S. FSS]&quot;,]</td><td></td></tr>
+</table>
+</body>
+</html>

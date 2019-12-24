@@ -1,0 +1,1 @@
+This profile supports Gravity Project data elements that focus on the Food Insecurity domain. The profile constrains Goals related to: Food Security.

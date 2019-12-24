@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "id": "grv-sctt-vs-8e8bc50a-bb9d-1753-2461-2419df70cef8",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2019-12-09T15:39:15.000-05:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Gravity_ValueSet_FoodInsecurity_1</h2><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-grv-sctt.html\"><code>http://grv.sctt.tmp/grv-sctt</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>733423003</td><td>Food insecurity (finding)</td><td/></tr><tr><td>grv-sctt-21000243108</td><td>Mild food insecurity (finding)</td><td/></tr><tr><td>grv-sctt-31000243105</td><td>Moderate food insecurity (finding)</td><td/></tr><tr><td>grv-sctt-41000243104</td><td>Severe food insecurity (finding)</td><td/></tr></table></li></ul></div>"
+  },
+  "url": "https://trifolia-fhir-dev.lantanagroup.com/lantana_prod_hapi_r4/SDOH-CC/ValueSet/grv-sctt-vs-8e8bc50a-bb9d-1753-2461-2419df70cef8",
+  "version": "0.0.1",
+  "name": "Gravity_ValueSet_FoodInsecurity_1",
+  "status": "draft",
+  "date": "2019-12-23T16:16:42-05:00",
+  "compose": {
+    "include": [
+      {
+        "system": "http://grv.sctt.tmp/grv-sctt",
+        "version": "11000243100",
+        "concept": [
+          {
+            "code": "733423003",
+            "display": "Food insecurity (finding)"
+          },
+          {
+            "code": "grv-sctt-21000243108",
+            "display": "Mild food insecurity (finding)"
+          },
+          {
+            "code": "grv-sctt-31000243105",
+            "display": "Moderate food insecurity (finding)"
+          },
+          {
+            "code": "grv-sctt-41000243104",
+            "display": "Severe food insecurity (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}

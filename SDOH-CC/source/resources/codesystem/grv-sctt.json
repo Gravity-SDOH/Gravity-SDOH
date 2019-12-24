@@ -1,0 +1,15 @@
+{
+	"resourceType": "CodeSystem",
+	"id": "grv-sctt",
+	"meta": {
+		"versionId": "3",
+		"lastUpdated": "2019-12-09T15:36:11.000-05:00"
+	},
+	"url": "http://grv.sctt.tmp/grv-sctt",
+	"version": "11000243100",
+	"name": "Placeholder SNOMED CT Code System",
+	"title": "Placeholder_SNOMED_CT",
+	"status": "draft",
+	"publisher": "Gravity Project",
+	"content": "not-present"
+}

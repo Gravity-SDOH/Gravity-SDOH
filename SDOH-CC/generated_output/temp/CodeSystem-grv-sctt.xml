@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="grv-sctt"/>
+  <meta>
+    <versionId value="3"/>
+    <lastUpdated value="2019-12-09T15:36:11.000-05:00"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Placeholder_SNOMED_CT</h2><p>This code system http://grv.sctt.tmp/grv-sctt defines many codes, but they are not represented here</p></div>
+  </text>
+  <url value="http://grv.sctt.tmp/grv-sctt"/>
+  <version value="0.0.1"/>
+  <name value="Placeholder SNOMED CT Code System"/>
+  <title value="Placeholder_SNOMED_CT"/>
+  <status value="draft"/>
+  <date value="2019-12-23T16:16:42-05:00"/>
+  <publisher value="Gravity Project"/>
+  <content value="not-present"/>
+</CodeSystem>

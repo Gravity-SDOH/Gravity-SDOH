@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://grv.hl7t-tasks.tmp/grv-hl7t-tasks",
+  "code" : "grv-hl7-tasks-20191209143500ET"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://grv.hl7t-tasks.tmp/grv-hl7t-tasks\" is not known (encountered paired with code = \"grv-hl7-tasks-20191209143500ET\"); The code provided (http://grv.hl7t-tasks.tmp/grv-hl7t-tasks#grv-hl7-tasks-20191209143500ET) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------

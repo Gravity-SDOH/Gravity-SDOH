@@ -1,0 +1,101 @@
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://grv.sctt.tmp/grv-sctt",
+      "version" : "11000243100",
+      "concept" : [{
+        "code" : "410516002",
+        "display" : "Known absent (qualifier value)"
+      },
+      {
+        "code" : "410515003",
+        "display" : "Known present (qualifier value)"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "Error from server: Unable to provide support for code system http://grv.sctt.tmp/grv-sctt"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://grv.sctt.tmp/grv-sctt",
+      "version" : "11000243100",
+      "concept" : [{
+        "code" : "733423003",
+        "display" : "Food insecurity (finding)"
+      },
+      {
+        "code" : "grv-sctt-21000243108",
+        "display" : "Mild food insecurity (finding)"
+      },
+      {
+        "code" : "grv-sctt-31000243105",
+        "display" : "Moderate food insecurity (finding)"
+      },
+      {
+        "code" : "grv-sctt-41000243104",
+        "display" : "Severe food insecurity (finding)"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "Error from server: Unable to provide support for code system http://grv.sctt.tmp/grv-sctt"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://grv.sctt.tmp/grv-sctt",
+      "version" : "11000243100",
+      "concept" : [{
+        "code" : "410516002",
+        "display" : "Known absent (qualifier value)"
+      },
+      {
+        "code" : "410515003",
+        "display" : "Known present (qualifier value)"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "Error from server: Unable to provide support for code system http://grv.sctt.tmp/grv-sctt"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://grv.sctt.tmp/grv-sctt",
+      "version" : "11000243100",
+      "concept" : [{
+        "code" : "733423003",
+        "display" : "Food insecurity (finding)"
+      },
+      {
+        "code" : "grv-sctt-21000243108",
+        "display" : "Mild food insecurity (finding)"
+      },
+      {
+        "code" : "grv-sctt-31000243105",
+        "display" : "Moderate food insecurity (finding)"
+      },
+      {
+        "code" : "grv-sctt-41000243104",
+        "display" : "Severe food insecurity (finding)"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "Error from server: Unable to provide support for code system http://grv.sctt.tmp/grv-sctt"
+}
+-------------------------------------------------------------------------------------

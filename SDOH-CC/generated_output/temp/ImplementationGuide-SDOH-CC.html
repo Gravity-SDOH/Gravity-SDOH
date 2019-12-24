@@ -1,0 +1,78 @@
+---
+# jekyll header
+level: 2
+template: base
+active: format
+layout: fhir-artifact
+type: ImplementationGuide
+id: SDOH-CC
+---
+
+<!-- ig template for many conformance resource html pages  ('base' in definitions file)  can not be used for conformance resources that have more that a single base template. e.g.,  sd since there are mapping and definitions templates for it as well  they need to be split out into 3 separate templates -->
+
+<!-- ============ CONTENT CONTENT=============== -->
+
+{% case 'ImplementationGuide' %} <!-- content depends on type -->
+{% when 'ValueSet' %}
+<!-- ============VAlUESET CONTENT CONTENT=============== -->
+
+  {% include ImplementationGuide-SDOH-CC-summary.xhtml %}
+  {% include ImplementationGuide-SDOH-CC-xref.xhtml %}
+  {% include ImplementationGuide-SDOH-CC-cld.xhtml %}
+
+  <h3>Expansion</h3>
+
+  {% include ImplementationGuide-SDOH-CC-expansion.xhtml %}
+<!-- ============VAlUESET CONTENT CONTENT=============== -->
+
+<!-- ( % when 'StructureMap' % }
+============StructureMap CONTENT CONTENT===============
+  ( % include nav-tabs.html type="ImplementationGuide" id="SDOH-CC" active="content" % }
+
+  <p>
+  Thise is the mapping between FHIR resources and the Logical Model:
+  </p>
+
+  <a name="summary"> </a>
+  <h2>Summary</h2>
+  ( % include ImplementationGuide-SDOH-CC-summary.xhtml % }
+  <br/>
+
+  <h2>Content</h2>
+  ( %  include ImplementationGuide-SDOH-CC-content.xhtml % }
+  <br/>
+
+  <a name="script"> </a>
+  <h2>Script</h2>
+  <pre>
+  ( % include ImplementationGuide-SDOH-CC-script.xhtml % }
+  </pre>
+============StructureMap CONTENT CONTENT=============== -->
+
+{% when 'OperationDefinition' %}
+<!-- ============OperationDefinition CONTENT CONTENT=============== -->
+
+  {% include ImplementationGuide-SDOH-CC-html.xhtml %}
+
+  {% capture my-include %}{% include SDOH-CC.md %}{% endcapture %}{{ my-include | markdownify }}  <!--add inline examples here -->
+<!-- ============OperationDefinition CONTENT CONTENT=============== -->
+
+{% else %}
+<!-- ============CodeSystem ConceptMap CapabilityStatement CONTENT CONTENT=============== -->
+
+  <h2>ImplementationGuide: SDOH-CC</h2>
+
+  {% include ImplementationGuide-SDOH-CC-html.xhtml %}
+  <!-- ============CodeSystem ConceptMap CapabilityStatement CONTENT CONTENT=============== -->
+
+{% endcase %}
+
+
+<!-- simple format links
+<p>
+Formats: <a href="ImplementationGuide-SDOH-CC.html">Narrative</a>, <a href="ImplementationGuide-SDOH-CC.xml.html">XML</a>, <a href="ImplementationGuide-SDOH-CC.json.html">JSON</a>, <a href="ImplementationGuide-SDOH-CC.ttl.html">Turtle</a>
+</p>
+-->
+
+
+  <!-- ==============END CONTENT END CONTENT=================== -->

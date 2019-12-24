@@ -1,0 +1,44 @@
+{
+  "Gravity-Condition-FoodInsecurity-1": {
+    "index": 0,
+    "url": "http://example.org/fhir/StructureDefinition/Gravity-Condition-FoodInsecurity-1",
+    "name": "Gravity_Condition_FoodInsecurity_1",
+    "path": "StructureDefinition-Gravity-Condition-FoodInsecurity-1.html",
+    "kind": "resource",
+    "type": "Condition",
+    "base": "http://hl7.org/fhir/StructureDefinition/Condition",
+    "basename": "Condition",
+    "basepath": "http://hl7.org/fhir/R4/condition.html",
+    "status": "draft",
+    "date": "Mon Dec 23 16:16:42 EST 2019",
+    "description": "This profile supports Gravity Project data elements that focus on the Food Insecurity domain. The profile constrains Conditions related to: Food insecurity, Mild food insecurity, Moderate food insecurity, or Severe food insecurity. "
+  },
+  "Gravity-Observation-FoodInsecurity-1": {
+    "index": 1,
+    "url": "http://example.org/fhir/StructureDefinition/Gravity-Observation-FoodInsecurity-1",
+    "name": "Gravity_Observation_FoodInsecurity_1",
+    "path": "StructureDefinition-Gravity-Observation-FoodInsecurity-1.html",
+    "kind": "resource",
+    "type": "Observation",
+    "base": "http://hl7.org/fhir/StructureDefinition/Observation",
+    "basename": "Observation",
+    "basepath": "http://hl7.org/fhir/R4/observation.html",
+    "status": "draft",
+    "date": "Mon Dec 23 16:16:42 EST 2019",
+    "description": "This profile supports Gravity Project data elements that focus on the Food Insecurity domain. The profile constrains Observations related to: Food insecurity. It allows the creation of Observations of: Food insecurity unknown, Food insecurity absent (aka Food security present), Food insecurity present, Mild food insecurity present, Moderate food insecurity present, and Severe food insecurity present."
+  },
+  "Gravity-Goal-FoodInsecurity-1": {
+    "index": 2,
+    "url": "http://example.org/fhir/StructureDefinition/Gravity-Goal-FoodInsecurity-1",
+    "name": "Gravity_Goal_FoodInsecurity_1",
+    "path": "StructureDefinition-Gravity-Goal-FoodInsecurity-1.html",
+    "kind": "resource",
+    "type": "Goal",
+    "base": "http://hl7.org/fhir/StructureDefinition/Goal",
+    "basename": "Goal",
+    "basepath": "http://hl7.org/fhir/R4/goal.html",
+    "status": "draft",
+    "date": "Mon Dec 23 16:16:42 EST 2019",
+    "description": "This profile supports Gravity Project data elements that focus on the Food Insecurity domain. The profile constrains Goals related to: Food Security."
+  }
+}

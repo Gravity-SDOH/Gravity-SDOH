@@ -1,0 +1,344 @@
+{
+	"resourceType": "StructureDefinition",
+	"id": "Gravity-Observation-FoodInsecurity-1",
+	"meta": {
+		"versionId": "1",
+		"lastUpdated": "2019-12-10T10:16:46.000-05:00"
+	},
+	"url": "http://example.org/fhir/StructureDefinition/Gravity-Observation-FoodInsecurity-1",
+	"name": "Gravity_Observation_FoodInsecurity_1",
+	"status": "draft",
+	"description": "This profile supports Gravity Project data elements that focus on the Food Insecurity domain. The profile constrains Observations related to: Food insecurity. It allows the creation of Observations of: Food insecurity unknown, Food insecurity absent (aka Food security present), Food insecurity present, Mild food insecurity present, Moderate food insecurity present, and Severe food insecurity present.",
+	"fhirVersion": "4.0.0",
+	"mapping": [
+		{
+			"identity": "workflow",
+			"uri": "http://hl7.org/fhir/workflow",
+			"name": "Workflow Pattern"
+		},
+		{
+			"identity": "sct-concept",
+			"uri": "http://snomed.info/conceptdomain",
+			"name": "SNOMED CT Concept Domain Binding"
+		},
+		{
+			"identity": "v2",
+			"uri": "http://hl7.org/v2",
+			"name": "HL7 v2 Mapping"
+		},
+		{
+			"identity": "rim",
+			"uri": "http://hl7.org/v3",
+			"name": "RIM Mapping"
+		},
+		{
+			"identity": "w5",
+			"uri": "http://hl7.org/fhir/fivews",
+			"name": "FiveWs Pattern Mapping"
+		},
+		{
+			"identity": "sct-attr",
+			"uri": "http://snomed.org/attributebinding",
+			"name": "SNOMED CT Attribute Binding"
+		}
+	],
+	"kind": "resource",
+	"abstract": false,
+	"type": "Observation",
+	"baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+	"derivation": "constraint",
+	"differential": {
+		"element": [
+			{
+				"id": "Observation.basedOn",
+				"path": "Observation.basedOn",
+				"max": "0",
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"http://hl7.org/fhir/StructureDefinition/NutritionOrder",
+							"http://hl7.org/fhir/StructureDefinition/ServiceRequest",
+							"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+						]
+					}
+				]
+			},
+			{
+				"id": "Observation.partOf",
+				"path": "Observation.partOf",
+				"max": "0",
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+						]
+					}
+				]
+			},
+			{
+				"id": "Observation.status",
+				"path": "Observation.status",
+				"short": "Final",
+				"fixedCode": "final"
+			},
+			{
+				"id": "Observation.category",
+				"path": "Observation.category",
+				"min": 1,
+				"max": "1"
+			},
+			{
+				"id": "Observation.category.coding",
+				"path": "Observation.category.coding",
+				"min": 1,
+				"max": "1"
+			},
+			{
+				"id": "Observation.category.coding.system",
+				"path": "Observation.category.coding.system",
+				"min": 1,
+				"fixedUri": "http://hl7.org/fhir/ValueSet/observation-category"
+			},
+			{
+				"id": "Observation.category.coding.code",
+				"path": "Observation.category.coding.code",
+				"min": 1,
+				"fixedCode": "social-history"
+			},
+			{
+				"id": "Observation.category.coding.display",
+				"path": "Observation.category.coding.display",
+				"min": 1,
+				"fixedString": "Social History"
+			},
+			{
+				"id": "Observation.category.coding.userSelected",
+				"path": "Observation.category.coding.userSelected",
+				"max": "0"
+			},
+			{
+				"id": "Observation.code.coding",
+				"path": "Observation.code.coding",
+				"min": 1,
+				"max": "1"
+			},
+			{
+				"id": "Observation.code.coding.system",
+				"path": "Observation.code.coding.system",
+				"min": 1,
+				"fixedUri": "http://snomed.info/sct"
+			},
+			{
+				"id": "Observation.code.coding.code",
+				"path": "Observation.code.coding.code",
+				"min": 1,
+				"binding": {
+					"strength": "required",
+					"valueSet": "https://trifolia-fhir-dev.lantanagroup.com/lantana_prod_hapi_r4/SDOH-CC/ValueSet/grv-sctt-vs-8e8bc50a-bb9d-1753-2461-2419df70cef8"
+				}
+			},
+			{
+				"id": "Observation.code.coding.display",
+				"path": "Observation.code.coding.display",
+				"min": 1
+			},
+			{
+				"id": "Observation.subject",
+				"path": "Observation.subject",
+				"min": 1,
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+						]
+					}
+				]
+			},
+			{
+				"id": "Observation.focus",
+				"path": "Observation.focus",
+				"max": "0"
+			},
+			{
+				"id": "Observation.encounter",
+				"path": "Observation.encounter",
+				"min": 1,
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+						]
+					}
+				]
+			},
+			{
+				"id": "Observation.effective[x]",
+				"path": "Observation.effective[x]",
+				"min": 1,
+				"type": [
+					{
+						"code": "Period"
+					}
+				]
+			},
+			{
+				"id": "Observation.performer",
+				"path": "Observation.performer",
+				"min": 1,
+				"max": "1",
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner",
+							"http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"
+						]
+					}
+				]
+			},
+			{
+				"id": "Observation.value[x]",
+				"path": "Observation.value[x]",
+				"type": [
+					{
+						"code": "CodeableConcept"
+					}
+				]
+			},
+			{
+				"id": "Observation.value[x].coding",
+				"path": "Observation.value[x].coding",
+				"min": 1,
+				"max": "1"
+			},
+			{
+				"id": "Observation.value[x].coding.system",
+				"path": "Observation.value[x].coding.system",
+				"min": 1,
+				"fixedUri": "http://snomed.info/sct"
+			},
+			{
+				"id": "Observation.value[x].coding.code",
+				"path": "Observation.value[x].coding.code",
+				"min": 1,
+				"binding": {
+					"strength": "required",
+					"valueSet": "https://trifolia-fhir-dev.lantanagroup.com/lantana_prod_hapi_r4/SDOH-CC/ValueSet/grv-sctt-vs-f82a9dd7-ba64-18d1-bc19-98ab4a9d02fa"
+				}
+			},
+			{
+				"id": "Observation.value[x].coding.display",
+				"path": "Observation.value[x].coding.display",
+				"min": 1
+			},
+			{
+				"id": "Observation.dataAbsentReason.coding",
+				"path": "Observation.dataAbsentReason.coding",
+				"min": 1,
+				"max": "1"
+			},
+			{
+				"id": "Observation.dataAbsentReason.coding.system",
+				"path": "Observation.dataAbsentReason.coding.system",
+				"min": 1,
+				"fixedUri": "http://hl7.org/fhir/ValueSet/data-absent-reason"
+			},
+			{
+				"id": "Observation.dataAbsentReason.coding.code",
+				"path": "Observation.dataAbsentReason.coding.code",
+				"min": 1,
+				"binding": {
+					"strength": "required",
+					"valueSet": "http://hl7.org/fhir/ValueSet/data-absent-reason"
+				}
+			},
+			{
+				"id": "Observation.dataAbsentReason.coding.display",
+				"path": "Observation.dataAbsentReason.coding.display",
+				"min": 1
+			},
+			{
+				"id": "Observation.interpretation",
+				"path": "Observation.interpretation",
+				"max": "0"
+			},
+			{
+				"id": "Observation.note.author[x]",
+				"path": "Observation.note.author[x]",
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+						]
+					},
+					{
+						"code": "string"
+					}
+				]
+			},
+			{
+				"id": "Observation.bodySite",
+				"path": "Observation.bodySite",
+				"max": "0"
+			},
+			{
+				"id": "Observation.method",
+				"path": "Observation.method",
+				"max": "0"
+			},
+			{
+				"id": "Observation.specimen",
+				"path": "Observation.specimen",
+				"max": "0"
+			},
+			{
+				"id": "Observation.device",
+				"path": "Observation.device",
+				"max": "0"
+			},
+			{
+				"id": "Observation.referenceRange",
+				"path": "Observation.referenceRange",
+				"max": "0"
+			},
+			{
+				"id": "Observation.hasMember",
+				"path": "Observation.hasMember",
+				"max": "0",
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"http://hl7.org/fhir/StructureDefinition/Observation",
+							"http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"
+						]
+					}
+				]
+			},
+			{
+				"id": "Observation.derivedFrom",
+				"path": "Observation.derivedFrom",
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"http://hl7.org/fhir/us/sdc/StructureDefinition/sdc-questionnaireresponse",
+							"http://hl7.org/fhir/StructureDefinition/Observation",
+							"http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"
+						]
+					}
+				]
+			},
+			{
+				"id": "Observation.component",
+				"path": "Observation.component",
+				"max": "0"
+			}
+		]
+	}
+}

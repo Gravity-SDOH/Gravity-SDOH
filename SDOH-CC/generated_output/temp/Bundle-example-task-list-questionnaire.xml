@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="example-task-list-questionnaire"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2019-12-11T13:17:28.000-05:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://example.org/fhir/StructureDefinition/Questionnaire/04ba3565-2a9b-46ff-ab19-b67e918890d4"/>
+    <resource>
+      <Questionnaire>
+        <id value="04ba3565-2a9b-46ff-ab19-b67e918890d4"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 04ba3565-2a9b-46ff-ab19-b67e918890d4</p><p><b>url</b>: <a href="http://example.org/fhir/StructureDefinition/Questionnaire/04ba3565-2a9b-46ff-ab19-b67e918890d4">http://example.org/fhir/StructureDefinition/Questionnaire/04ba3565-2a9b-46ff-ab19-b67e918890d4</a></p><p><b>identifier</b>: 222580b3-1701-44b2-885c-6352ca5a6adf</p><p><b>name</b>: Food Insecurity (Hunger Vital Sign)</p><p><b>title</b>: Food Insecurity</p><p><b>status</b>: active</p><p><b>subjectType</b>: Patient</p><p><b>date</b>: Dec 3, 2019 11:09:54 AM</p><blockquote><p><b>item</b></p><p><b>linkId</b>: /88121-9</p><p><b>code</b>: Hunger Vital Sign [HVS] (Details: LOINC code 88121-9 = 'Hunger Vital Sign [HVS]', stated as 'Hunger Vital Sign [HVS]')</p><p><b>text</b>: Hunger Vital Sign [HVS]</p><p><b>type</b>: group</p><p><b>required</b>: false</p><h3>Items</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote></div>
+        </text>
+        <extension url="http://hl7.org/fhir/us/sdc/StructureDefinition/sdc-questionnaire-endpoint">
+          <valueString value="https://requester.organization.com/fhir/baseR4"/>
+        </extension>
+        <url value="http://example.org/fhir/StructureDefinition/Questionnaire/04ba3565-2a9b-46ff-ab19-b67e918890d4"/>
+        <identifier>
+          <system value="http://www.maxmddirect.com/hl7/fhir/grv-locali-screenings"/>
+          <value value="222580b3-1701-44b2-885c-6352ca5a6adf"/>
+        </identifier>
+        <name value="Food Insecurity (Hunger Vital Sign)"/>
+        <title value="Food Insecurity"/>
+        <status value="active"/>
+        <subjectType value="Patient"/>
+        <date value="2019-12-03T16:09:54.445Z"/>
+        <item>
+          <linkId value="/88121-9"/>
+          <code>
+            <system value="http://loinc.org"/>
+            <code value="88121-9"/>
+            <display value="Hunger Vital Sign [HVS]"/>
+          </code>
+          <text value="Hunger Vital Sign [HVS]"/>
+          <type value="group"/>
+          <required value="false"/>
+          <item>
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+              <valueCodeableConcept>
+                <coding>
+                  <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+                  <code value="drop-down"/>
+                  <display value="Drop down"/>
+                </coding>
+                <text value="Drop down"/>
+              </valueCodeableConcept>
+            </extension>
+            <linkId value="/88121-9/88122-7"/>
+            <code>
+              <system value="http://loinc.org"/>
+              <code value="88122-7"/>
+              <display value="Within the past 12Mo we worried whether our food would run out before we got money to buy more"/>
+            </code>
+            <text value="Within the past 12Mo we worried whether our food would run out before we got money to buy more"/>
+            <type value="choice"/>
+            <required value="false"/>
+            <answerOption>
+              <valueCoding>
+                <code value="LA28397-0"/>
+                <display value="Often true"/>
+              </valueCoding>
+            </answerOption>
+            <answerOption>
+              <valueCoding>
+                <code value="LA6729-3"/>
+                <display value="Sometimes true"/>
+              </valueCoding>
+            </answerOption>
+            <answerOption>
+              <valueCoding>
+                <code value="LA28398-8"/>
+                <display value="Never true"/>
+              </valueCoding>
+            </answerOption>
+            <answerOption>
+              <valueCoding>
+                <code value="LA15775-2"/>
+                <display value="Don&#39;t know/refused"/>
+              </valueCoding>
+            </answerOption>
+          </item>
+          <item>
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+              <valueCodeableConcept>
+                <coding>
+                  <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+                  <code value="drop-down"/>
+                  <display value="Drop down"/>
+                </coding>
+                <text value="Drop down"/>
+              </valueCodeableConcept>
+            </extension>
+            <linkId value="/88121-9/88123-5"/>
+            <code>
+              <system value="http://loinc.org"/>
+              <code value="88123-5"/>
+              <display value="Within the past 12Mo the food we bought just didn&#39;t last and we didn&#39;t have money to get more"/>
+            </code>
+            <text value="Within the past 12Mo the food we bought just didn&#39;t last and we didn&#39;t have money to get more"/>
+            <type value="choice"/>
+            <required value="false"/>
+            <answerOption>
+              <valueCoding>
+                <code value="LA28397-0"/>
+                <display value="Often true"/>
+              </valueCoding>
+            </answerOption>
+            <answerOption>
+              <valueCoding>
+                <code value="LA6729-3"/>
+                <display value="Sometimes true"/>
+              </valueCoding>
+            </answerOption>
+            <answerOption>
+              <valueCoding>
+                <code value="LA28398-8"/>
+                <display value="Never true"/>
+              </valueCoding>
+            </answerOption>
+            <answerOption>
+              <valueCoding>
+                <code value="LA15775-2"/>
+                <display value="Don&#39;t know/refused"/>
+              </valueCoding>
+            </answerOption>
+          </item>
+          <item>
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+              <valueCodeableConcept>
+                <coding>
+                  <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+                  <code value="help"/>
+                  <display value="Help-Button"/>
+                </coding>
+                <text value="Help-Button"/>
+              </valueCodeableConcept>
+            </extension>
+            <linkId value="/88121-9-help"/>
+            <text value="The Hunger Vital Sign&#x2122; identifies individuals and families as being at risk for food insecurity. A positive screen is either question answered with &quot;often true&quot; or &quot;sometimes true.&quot;"/>
+            <type value="display"/>
+          </item>
+        </item>
+      </Questionnaire>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Questionnaire"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/fhir/StructureDefinition/SDOH-Patient-List"/>
+    <resource>
+      <List>
+        <id value="SDOH-Patient-List"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: SDOH-Patient-List</p><p><b>status</b>: current</p><p><b>title</b>: Patient List</p><blockquote><p><b>entry</b></p><p><b>item</b>: <a href="Patient?given=Alice&amp;family=Newman&amp;address-postalcode=97006&amp;birthdate=1970-05-01">Patient?given=Alice&amp;family=Newman&amp;address-postalcode=97006&amp;birthdate=1970-05-01</a></p></blockquote><blockquote><p><b>entry</b></p><p><b>item</b>: <a href="Patient?given=Jeremy&amp;family=Bates&amp;address-postalcode=97006&amp;birthdate=1980-08-01">Patient?given=Jeremy&amp;family=Bates&amp;address-postalcode=97006&amp;birthdate=1980-08-01</a></p></blockquote></div>
+        </text>
+        <status value="current"/>
+        <title value="Patient List"/>
+        <entry>
+          <item>
+            <reference value="Patient?given=Alice&amp;family=Newman&amp;address-postalcode=97006&amp;birthdate=1970-05-01"/>
+          </item>
+        </entry>
+        <entry>
+          <item>
+            <reference value="Patient?given=Jeremy&amp;family=Bates&amp;address-postalcode=97006&amp;birthdate=1980-08-01"/>
+          </item>
+        </entry>
+      </List>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="List"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/fhir/StructureDefinition/US-Core-Organization"/>
+    <resource>
+      <Organization>
+        <id value="US-Core-Organization"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: US-Core-Organization</p><p><b>identifier</b>: 123</p><p><b>active</b>: true</p><p><b>name</b>: Good Health Hospital</p><p><b>address</b>: 123 Main St Frot Lee NJ 07024 </p></div>
+        </text>
+        <identifier>
+          <system value="http://grv.hl7t-tasks.tmp/grv-hl7t-org-identifier"/>
+          <value value="123"/>
+        </identifier>
+        <active value="true"/>
+        <name value="Good Health Hospital"/>
+        <address>
+          <line value="123 Main St"/>
+          <city value="Frot Lee"/>
+          <state value="NJ"/>
+          <postalCode value="07024"/>
+        </address>
+      </Organization>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Organization"/>
+      <ifNoneExist value="Organization?identifier=http%3A%2F%2Fgrv.hl7t-tasks.tmp%2Fgrv-hl7t-org-identifier|123"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/fhir/StructureDefinition/SDOH-Screening-Task"/>
+    <resource>
+      <Task>
+        <id value="SDOH-Screening-Task"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: SDOH-Screening-Task</p><p><b>status</b>: requested</p><p><b>code</b>: Screen Patients <span style="background: LightGoldenRodYellow">(Details : {http://grv.hl7t-tasks.tmp/grv-hl7t-tasks code 'grv-hl7-tasks-20191209143500ET' = 'grv-hl7-tasks-20191209143500ET', given as 'screen-pts'})</span></p><p><b>focus</b>: <a href="Questionnaire-04ba3565-2a9b-46ff-ab19-b67e918890d4.html">Generated Summary: id: 04ba3565-2a9b-46ff-ab19-b67e918890d4; url: http://example.org/fhir/StructureDefinition/Questionnaire/04ba3565-2a9b-46ff-ab19-b67e918890d4; 222580b3-1701-44b2-885c-6352ca5a6adf; version: 0.0.1; name: example-hunger-vital-sign-screening; title: example-hunger-vital-sign-screening; status: active; subjectType: Patient; date: Dec 3, 2019 11:09:54 AM</a></p><p><b>for</b>: <a href="List/0bddd887-b878-4795-9964-378b3ca0d7e1">List/0bddd887-b878-4795-9964-378b3ca0d7e1</a></p><p><b>requester</b>: <a href="Organization/3c26f307-1aa1-4701-ac43-3267ca601470">Organization/3c26f307-1aa1-4701-ac43-3267ca601470</a></p></div>
+        </text>
+        <extension url="https://www.maxmddirect.com/fhir/extension/sdc/task/type">
+          <valueCodeableConcept>
+            <coding>
+              <system value="https://www.maxmddirect.com/fhir/code/sdc/task/type"/>
+              <code value="questionnaire"/>
+            </coding>
+            <text value="Fullfill Questionnaire Task"/>
+          </valueCodeableConcept>
+        </extension>
+        <status value="requested"/>
+        <code>
+          <coding>
+            <system value="http://grv.hl7t-tasks.tmp/grv-hl7t-tasks"/>
+            <code value="grv-hl7-tasks-20191209143500ET"/>
+            <display value="screen-pts"/>
+          </coding>
+          <text value="Screen Patients"/>
+        </code>
+        <focus>
+          <reference value="Questionnaire/04ba3565-2a9b-46ff-ab19-b67e918890d4"/>
+        </focus>
+        <for>
+          <reference value="List/0bddd887-b878-4795-9964-378b3ca0d7e1"/>
+        </for>
+        <requester>
+          <reference value="Organization/3c26f307-1aa1-4701-ac43-3267ca601470"/>
+        </requester>
+      </Task>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Task"/>
+    </request>
+  </entry>
+</Bundle>
